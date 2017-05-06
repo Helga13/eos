@@ -1,0 +1,249 @@
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+$advantages_bw-06-name: 'advantages_bw-06'
+$advantages_bw-06-x: 102px
+$advantages_bw-06-y: 348px
+$advantages_bw-06-offset-x: -102px
+$advantages_bw-06-offset-y: -348px
+$advantages_bw-06-width: 102px
+$advantages_bw-06-height: 102px
+$advantages_bw-06-total-width: 622px
+$advantages_bw-06-total-height: 450px
+$advantages_bw-06-image: 'sprite.png'
+$advantages_bw-06: 102px 348px -102px -348px 102px 102px 622px 450px 'sprite.png' 'advantages_bw-06'
+$advantages_bw-07-name: 'advantages_bw-07'
+$advantages_bw-07-x: 204px
+$advantages_bw-07-y: 348px
+$advantages_bw-07-offset-x: -204px
+$advantages_bw-07-offset-y: -348px
+$advantages_bw-07-width: 102px
+$advantages_bw-07-height: 102px
+$advantages_bw-07-total-width: 622px
+$advantages_bw-07-total-height: 450px
+$advantages_bw-07-image: 'sprite.png'
+$advantages_bw-07: 204px 348px -204px -348px 102px 102px 622px 450px 'sprite.png' 'advantages_bw-07'
+$advantages_bw-08-name: 'advantages_bw-08'
+$advantages_bw-08-x: 348px
+$advantages_bw-08-y: 174px
+$advantages_bw-08-offset-x: -348px
+$advantages_bw-08-offset-y: -174px
+$advantages_bw-08-width: 102px
+$advantages_bw-08-height: 102px
+$advantages_bw-08-total-width: 622px
+$advantages_bw-08-total-height: 450px
+$advantages_bw-08-image: 'sprite.png'
+$advantages_bw-08: 348px 174px -348px -174px 102px 102px 622px 450px 'sprite.png' 'advantages_bw-08'
+$advantages_bw-09-name: 'advantages_bw-09'
+$advantages_bw-09-x: 0px
+$advantages_bw-09-y: 348px
+$advantages_bw-09-offset-x: 0px
+$advantages_bw-09-offset-y: -348px
+$advantages_bw-09-width: 102px
+$advantages_bw-09-height: 102px
+$advantages_bw-09-total-width: 622px
+$advantages_bw-09-total-height: 450px
+$advantages_bw-09-image: 'sprite.png'
+$advantages_bw-09: 0px 348px 0px -348px 102px 102px 622px 450px 'sprite.png' 'advantages_bw-09'
+$icons_cart-name: 'icons_cart'
+$icons_cart-x: 522px
+$icons_cart-y: 160px
+$icons_cart-offset-x: -522px
+$icons_cart-offset-y: -160px
+$icons_cart-width: 60px
+$icons_cart-height: 60px
+$icons_cart-total-width: 622px
+$icons_cart-total-height: 450px
+$icons_cart-image: 'sprite.png'
+$icons_cart: 522px 160px -522px -160px 60px 60px 622px 450px 'sprite.png' 'icons_cart'
+$icons_comparison-name: 'icons_comparison'
+$icons_comparison-x: 522px
+$icons_comparison-y: 100px
+$icons_comparison-offset-x: -522px
+$icons_comparison-offset-y: -100px
+$icons_comparison-width: 60px
+$icons_comparison-height: 60px
+$icons_comparison-total-width: 622px
+$icons_comparison-total-height: 450px
+$icons_comparison-image: 'sprite.png'
+$icons_comparison: 522px 100px -522px -100px 60px 60px 622px 450px 'sprite.png' 'icons_comparison'
+$icons_person-name: 'icons_person'
+$icons_person-x: 582px
+$icons_person-y: 100px
+$icons_person-offset-x: -582px
+$icons_person-offset-y: -100px
+$icons_person-width: 36px
+$icons_person-height: 44px
+$icons_person-total-width: 622px
+$icons_person-total-height: 450px
+$icons_person-image: 'sprite.png'
+$icons_person: 582px 100px -582px -100px 36px 44px 622px 450px 'sprite.png' 'icons_person'
+$icons_search-name: 'icons_search'
+$icons_search-x: 522px
+$icons_search-y: 220px
+$icons_search-offset-x: -522px
+$icons_search-offset-y: -220px
+$icons_search-width: 48px
+$icons_search-height: 44px
+$icons_search-total-width: 622px
+$icons_search-total-height: 450px
+$icons_search-image: 'sprite.png'
+$icons_search: 522px 220px -522px -220px 48px 44px 622px 450px 'sprite.png' 'icons_search'
+$icons_to_left_arrow-green-name: 'icons_to_left_arrow-green'
+$icons_to_left_arrow-green-x: 0px
+$icons_to_left_arrow-green-y: 0px
+$icons_to_left_arrow-green-offset-x: 0px
+$icons_to_left_arrow-green-offset-y: 0px
+$icons_to_left_arrow-green-width: 174px
+$icons_to_left_arrow-green-height: 174px
+$icons_to_left_arrow-green-total-width: 622px
+$icons_to_left_arrow-green-total-height: 450px
+$icons_to_left_arrow-green-image: 'sprite.png'
+$icons_to_left_arrow-green: 0px 0px 0px 0px 174px 174px 622px 450px 'sprite.png' 'icons_to_left_arrow-green'
+$icons_to_right_arrow-green-name: 'icons_to_right_arrow-green'
+$icons_to_right_arrow-green-x: 348px
+$icons_to_right_arrow-green-y: 0px
+$icons_to_right_arrow-green-offset-x: -348px
+$icons_to_right_arrow-green-offset-y: 0px
+$icons_to_right_arrow-green-width: 174px
+$icons_to_right_arrow-green-height: 174px
+$icons_to_right_arrow-green-total-width: 622px
+$icons_to_right_arrow-green-total-height: 450px
+$icons_to_right_arrow-green-image: 'sprite.png'
+$icons_to_right_arrow-green: 348px 0px -348px 0px 174px 174px 622px 450px 'sprite.png' 'icons_to_right_arrow-green'
+$insta-name: 'insta'
+$insta-x: 306px
+$insta-y: 348px
+$insta-offset-x: -306px
+$insta-offset-y: -348px
+$insta-width: 100px
+$insta-height: 100px
+$insta-total-width: 622px
+$insta-total-height: 450px
+$insta-image: 'sprite.png'
+$insta: 306px 348px -306px -348px 100px 100px 622px 450px 'sprite.png' 'insta'
+$prop1-name: 'prop1'
+$prop1-x: 174px
+$prop1-y: 174px
+$prop1-offset-x: -174px
+$prop1-offset-y: -174px
+$prop1-width: 174px
+$prop1-height: 174px
+$prop1-total-width: 622px
+$prop1-total-height: 450px
+$prop1-image: 'sprite.png'
+$prop1: 174px 174px -174px -174px 174px 174px 622px 450px 'sprite.png' 'prop1'
+$prop2-name: 'prop2'
+$prop2-x: 0px
+$prop2-y: 174px
+$prop2-offset-x: 0px
+$prop2-offset-y: -174px
+$prop2-width: 174px
+$prop2-height: 174px
+$prop2-total-width: 622px
+$prop2-total-height: 450px
+$prop2-image: 'sprite.png'
+$prop2: 0px 174px 0px -174px 174px 174px 622px 450px 'sprite.png' 'prop2'
+$prop3-name: 'prop3'
+$prop3-x: 174px
+$prop3-y: 0px
+$prop3-offset-x: -174px
+$prop3-offset-y: 0px
+$prop3-width: 174px
+$prop3-height: 174px
+$prop3-total-width: 622px
+$prop3-total-height: 450px
+$prop3-image: 'sprite.png'
+$prop3: 174px 0px -174px 0px 174px 174px 622px 450px 'sprite.png' 'prop3'
+$skype-name: 'skype'
+$skype-x: 406px
+$skype-y: 348px
+$skype-offset-x: -406px
+$skype-offset-y: -348px
+$skype-width: 100px
+$skype-height: 100px
+$skype-total-width: 622px
+$skype-total-height: 450px
+$skype-image: 'sprite.png'
+$skype: 406px 348px -406px -348px 100px 100px 622px 450px 'sprite.png' 'skype'
+$vk-name: 'vk'
+$vk-x: 522px
+$vk-y: 0px
+$vk-offset-x: -522px
+$vk-offset-y: 0px
+$vk-width: 100px
+$vk-height: 100px
+$vk-total-width: 622px
+$vk-total-height: 450px
+$vk-image: 'sprite.png'
+$vk: 522px 0px -522px 0px 100px 100px 622px 450px 'sprite.png' 'vk'
+$spritesheet-width: 622px
+$spritesheet-height: 450px
+$spritesheet-image: 'sprite.png'
+$spritesheet-sprites: $advantages_bw-06 $advantages_bw-07 $advantages_bw-08 $advantages_bw-09 $icons_cart $icons_comparison $icons_person $icons_search $icons_to_left_arrow-green $icons_to_right_arrow-green $insta $prop1 $prop2 $prop3 $skype $vk
+$spritesheet: 622px 450px 'sprite.png' $spritesheet-sprites
+
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+  */
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+@mixin spriter-width($sprite)
+  width: nth($sprite, 5)/2
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+@mixin spriter-height($sprite)
+  height: nth($sprite, 6)/2
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+@mixin spriter-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)/2
+  $sprite-offset-y: nth($sprite, 4)/2
+  background-position: $sprite-offset-x  $sprite-offset-y
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(../img/#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+@mixin spriter($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)
+@mixin spritesr($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include spriter($sprite)
