@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+	<title>Контакты</title>
+	//= includes/head.html
+	<body>
+	//= includes/header.html
+	//= includes/sidebar_left.html
+	//= includes/sidebar_right.html
+	<div class="main_content">
+		<div class="row wrap">
+			<div class="title_block_wrap">
+				<div class="title_block"><span class="title_block__inner">Где купить</span></div>
+			</div>
+		</div>
+		<div class="row wrap left_col_wrap">
+			<div class="left_col">
+				<div class="subtitle">Поиск магазина</div>
+				<div class="left_col__inner">
+					<div class="title">Критерии поиска</div>
+						<div class="criteria_block">
+							<div class="subtitle_block">Расположение</div>
+							<div class="select_block">
+								<select class="js-select select">
+									<option value="1">Беларусь</option>
+									<option value="2">Беларусь1</option>
+									<option value="3">Беларусь2</option>
+									<option value="4">Беларусь3</option>
+								</select>
+							</div>
+							<div class="select_block">
+								<select class="js-select select">
+									<option value="1">Минск</option>
+									<option value="2">Минск1</option>
+									<option value="3">Минск2</option>
+									<option value="4">Минск3</option>
+								</select>
+							</div>
+						</div>
+						<div class="criteria_block">
+							<div class="subtitle_block">Режим работы</div>
+								<div class="form_mode">
+									<div class="field">
+										<label for="minTime">с</label> <input class="input_small" type="text" id="minTime" value="9">
+									</div>
+									<div class="field">
+										<label for="maxTime">до</label> <input class="input_small" type="text" id="maxTime" value="18">
+									</div>
+								</div>
+								<div class="slider_ui js-sliderTime" id="slider"></div>
+						</div>
+						<div class="checkbox_block">
+							<div class="checkbox_field">
+								<input id="daily" type="checkbox" checked>
+								<label for="daily"><span class="checkbox"></span>Ежедневно</label>
+							</div>
+						</div>
+						<div class="criteria_block">
+							<div class="subtitle_block">Стоимость доставки</div>
+								<div class="form_mode">
+									<div class="field">
+										<label for="minCost">от</label> <input class="input_small" type="text" id="minCost" value="10">
+									</div>
+									<div class="field">
+										<label for="maxCost">до</label> <input class="input_small" type="text" id="maxCost" value="30">
+									</div>
+								</div>
+								<div class="slider_ui js-sliderPrice"></div>
+						</div>
+						<div class="checkbox_block">
+						<div class="subtitle_block">Способы оплаты</div>
+							<div class="checkbox_field">
+								<input id="cash" type="checkbox" checked>
+								<label for="cash"><span class="checkbox"></span>Наличные</label>
+							</div>
+							<div class="checkbox_field">
+								<input id="card" type="checkbox">
+								<label for="card"><span class="checkbox"></span>Банковская карта</label>
+							</div>
+							<div class="checkbox_field">
+								<input id="transfer" type="checkbox">
+								<label for="transfer"><span class="checkbox"></span>Денежный перевод</label>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="right_col">
+				<div class="subtitle">Карта проезда</div>
+				<div class="marker-block">
+					<div class="maps pin1" data-longitude="53.9079431" data-latitude="27.5381874"></div>
+					<div class="maps pin2" data-longitude="53.9081191" data-latitude="27.5682242"></div>
+					<div class="maps pin3" data-longitude="53.9024183" data-latitude="27.5757692"></div>
+					<div class="maps pin4" data-longitude="53.9193732" data-latitude="27.6018482"></div>
+				</div>
+				<div id="map"></div>
+				<div class="subtitle">Магазины</div>
+				<div class="address_wrap">
+					<div class="address_item">
+						<div class="address_item_wrap">
+							<div class="title">Магазин «Территория Мебели»</div>
+							<div class="phones">
+							<div class="key">Телефоны:</div>
+								<p>+375 29 626 32 37</p>
+								<p>+375 29 626 32 37</p>
+								<p>+375 29 626 32 37</p>
+							</div>
+							<div class="address">
+								<div class="key">Адрес:</div>
+								<p>Пр-т Независимости, 115 (ст. м. Московская)</p>
+							</div>
+							<div class="mode">
+								<div class="key">Режим работы:</div>
+								<p>Пн. - Чт. 10.00 - 18.00, Пт. - Вс. 12.00 - 21.00</p>
+							</div>
+							<div class="payment">
+								<div class="key">Способы оплаты:</div>
+								<p>Наличные</p>
+								<p>Банковская карта</p>
+							</div>
+							<div class="website">
+								<div class="key">Сайт:</div>
+								<p><a class="link" href="#">www.matras-minsk.by</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="address_item">
+						<div class="address_item_wrap">
+							<div class="title">Магазин «Территория Мебели»</div>
+							<div class="phones">
+							<div class="key">Телефоны:</div>
+								<p>+375 29 626 32 37</p>
+								<p>+375 29 626 32 37</p>
+								<p>+375 29 626 32 37</p>
+							</div>
+							<div class="address">
+								<div class="key">Адрес:</div>
+								<p>Пр-т Независимости, 115 (ст. м. Московская)</p>
+							</div>
+							<div class="mode">
+								<div class="key">Режим работы:</div>
+								<p>Пн. - Чт. 10.00 - 18.00, Пт. - Вс. 12.00 - 21.00</p>
+							</div>
+							<div class="payment">
+								<div class="key">Способы оплаты:</div>
+								<p>Наличные</p>
+								<p>Банковская карта</p>
+							</div>
+							<div class="website">
+								<div class="key">Сайт:</div>
+								<p><a class="link" href="#">www.matras-minsk.by</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	//= includes/footer.html
+	//= includes/script.html
+	</body>
+</html>

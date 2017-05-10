@@ -21,8 +21,8 @@ body {
 	font-family: 'CoreSansA35Light', $font-stack-helvetica;
 	@include font-size(1.4);
 	font-smoothing: antialiased;
-   font-kerning: normal;
-   text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
 }
 
 ul {
@@ -38,13 +38,71 @@ a {
 	color: inherit;
 }
 
-//p {
-//	@include font-size(1.4);
-//	@include line-height(2.0);
-//}
+label{
+	@include font-size(1.4);
+	@include line-height(2.0);
+}
+
+input[type="text"]{
+	border: 1px solid #65bd26;
+	@include font-size(1.4);
+	color: #000;
+	padding: 0 20px;
+	text-align: right;
+	height: 22px;
+	line-height: 20px;
+	width: 87px;
+}
+
+input[type="checkbox"]{
+	position: absolute;
+	z-index: -1;
+}
+
+.checkbox_block{
+	margin: 24px 0 12px;
+	padding: 0 10px;
+}
+
+.checkbox_block label{
+	cursor: pointer;
+}
+
+.checkbox{
+	border: 1px solid #65bd26;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	position: relative;
+	margin-right: 11px;
+	top: 4px;
+}
+
+.checkbox_field{
+	padding: 2px 0 4px;
+}
+
+input[type=checkbox]:checked+label .checkbox{
+	background-color: #65bd26;
+}
+
+input[type=checkbox]:checked+label .checkbox::after {
+  content: '';
+  position: absolute;
+  background: url('../img/icons/checkbox.png') no-repeat;
+  top: 4px;
+  left: 2px;
+  height: 14px;
+  width: 14px;
+}
+
+.input_small{
+	border: 1px solid #eee;
+}
 
 .wrap{
 	width: 73.611%;
+	max-width: 1060px;
 	margin: 0 auto;
 	padding: 0 10px;
 	@include font-size(0);
@@ -500,11 +558,27 @@ a {
 		background-color: #65bd26;
 		left: 0;
 		top: 20px;
-		z-index: -1;
+		z-index: 0;
 	}
 	.title_block__inner{
 		background-color: #f3f2f2;
 		padding: 0 26px;
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.title_block_wrap{
+	background-color: #fff;
+	.title_block{
+		margin: 0;
+		padding: 8px 0 32px;
+		&:after{
+			top: 26px;
+		}
+	}
+	.title_block__inner{
+		background-color: #fff;
 	}
 }
 
@@ -670,12 +744,6 @@ a {
 	.text_block{
 		padding: 12px 20px;
 		overflow: hidden;
-		.subtitle{
-			font-family: 'CoreSansA65Bold', $font-stack-helvetica;
-			@include font-size(2.0);
-			@include line-height(3.0);
-			text-align: center;
-		}
 		.simple_text{
 			font-family: 'CoreSansA35Light', $font-stack-helvetica;
 			@include font-size(1.4);
@@ -683,6 +751,18 @@ a {
 			margin: 4px 0;
 		}
 	}
+}
+
+.see_all{
+	text-align: right;
+	padding: 10px;
+}
+
+.subtitle{
+	font-family: 'CoreSansA65Bold', $font-stack-helvetica;
+	@include font-size(2.0);
+	@include line-height(3.0);
+	text-align: center;
 }
 
 .advantage{
@@ -771,4 +851,197 @@ a {
 	background: url('../img/icons/icons_to_right_arrow-green.png') center no-repeat;
 	background-size: 22px 22px;
 	right: -22px;
+}
+
+.left_col{
+	width: 320px;
+	float: left;
+	padding: 0 10px;
+}
+
+.right_col{
+	overflow: hidden;
+	padding: 0 10px;
+}
+
+#map{
+	height: 378px;
+}
+
+.left_col,
+.right_col{
+	.subtitle{
+		padding: 38px 0 20px;
+	}
+}
+
+.address_wrap{
+	margin: 0 -10px 80px;
+}
+
+.address_item_wrap{
+	background-color: #fff;
+	padding: 18px 20px 28px;
+}
+
+.address_item{
+	padding: 10px;
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	.title{
+		color: #65bd26;
+		font-family: 'CoreSansA65Bold', $font-stack-helvetica;
+		@include font-size(1.8);
+		@include line-height(2.0);
+	}
+	p,
+	.key{
+		color: #333;
+		@include font-size(1.2);
+		@include line-height(1.5);
+	}
+	.key{
+		font-family: 'CoreSansA55Medium', $font-stack-helvetica;
+		padding: 6px 0;
+	}
+	.link{
+		color: #65bd26;
+		border-bottom: 1px solid #dff0d7;
+	}
+}
+
+.left_col__inner{
+	background-color: #fff;
+	padding: 40px 10px;
+	.title{
+		font-family: 'CoreSansA65Bold', $font-stack-helvetica;
+		@include font-size(1.4);
+		@include line-height(2.0);
+		text-align: center;
+	}
+	.subtitle_block{
+		font-family: 'CoreSansA55Medium', $font-stack-helvetica;
+		@include font-size(1.4);
+		@include line-height(2.0);
+		padding: 10px 10px 16px;
+	}
+}
+
+.select_block{
+	width: 50%;
+	display: inline-block;
+	padding: 0 10px 18px;
+	.select{
+		width: 100%;
+	}
+}
+
+option,
+.select2-selection__rendered{
+	@include font-size(1.2);
+	@include line-height(2.0);
+	text-align: right;
+}
+
+/* custom select */
+
+.select2-container--default .select2-selection--single{
+	border: 0;
+	border-bottom: 1px solid #65bd26;
+	border-radius: 0;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+	border-color: #65bd26 transparent transparent;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+	border-color: transparent transparent #65bd26;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+	color: #000;
+}
+
+.select2-dropdown{
+	border: 1px solid #65bd26;
+	border-radius: 0;
+}
+
+.select2-results__option[aria-selected="true"]{
+	background-color: rgba(101,189,38,.3)!important;
+}
+
+.select2-results__option.select2-results__option--highlighted{
+	background-color: #65bd26!important;
+}
+
+/* slider times */
+
+.js-slider{
+	@include font-size(1.4);
+	@include line-height(2.0);
+}
+
+/* Ширина слайдера */
+.slider_ui {
+	width: 260px;
+	margin: 22px auto;
+}
+/* Контейнер слайдера */
+.ui-slider {
+	position: relative;
+}
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 11px;   /* Задаем нужную ширину */
+	height: 11px;  /* и высоту */
+	background: #65bd26; /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+	border-radius: 50%;
+	cursor: pointer;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	display: block;
+	border: 0;
+	overflow: hidden;
+}
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+.ui-slider-horizontal {
+	 height: 1px; /* задаем высоту согласно дизайна */
+}
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle { 
+	top: -5px;
+	margin-left: -6px;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min { 
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+/* оформление полосы по которой ходит ползунок */
+.ui-widget-content { 
+	background: #65bd26;
+}
+
+.form_mode{
+	.field{
+		display: inline-block;
+		width: 50%;
+		padding: 0 10px;
+		text-align: right;
+	}
+	label{
+		float: left;
+	}
 }

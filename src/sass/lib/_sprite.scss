@@ -54,6 +54,17 @@ $advantages_bw-09-total-width: 622px
 $advantages_bw-09-total-height: 450px
 $advantages_bw-09-image: 'sprite.png'
 $advantages_bw-09: 0px 348px 0px -348px 102px 102px 622px 450px 'sprite.png' 'advantages_bw-09'
+$checkbox-name: 'checkbox'
+$checkbox-x: 582px
+$checkbox-y: 144px
+$checkbox-offset-x: -582px
+$checkbox-offset-y: -144px
+$checkbox-width: 14px
+$checkbox-height: 12px
+$checkbox-total-width: 622px
+$checkbox-total-height: 450px
+$checkbox-image: 'sprite.png'
+$checkbox: 582px 144px -582px -144px 14px 12px 622px 450px 'sprite.png' 'checkbox'
 $icons_cart-name: 'icons_cart'
 $icons_cart-x: 522px
 $icons_cart-y: 160px
@@ -131,6 +142,17 @@ $insta-total-width: 622px
 $insta-total-height: 450px
 $insta-image: 'sprite.png'
 $insta: 306px 348px -306px -348px 100px 100px 622px 450px 'sprite.png' 'insta'
+$marker-name: 'marker'
+$marker-x: 582px
+$marker-y: 160px
+$marker-offset-x: -582px
+$marker-offset-y: -160px
+$marker-width: 24px
+$marker-height: 35px
+$marker-total-width: 622px
+$marker-total-height: 450px
+$marker-image: 'sprite.png'
+$marker: 582px 160px -582px -160px 24px 35px 622px 450px 'sprite.png' 'marker'
 $prop1-name: 'prop1'
 $prop1-x: 174px
 $prop1-y: 174px
@@ -189,7 +211,7 @@ $vk: 522px 0px -522px 0px 100px 100px 622px 450px 'sprite.png' 'vk'
 $spritesheet-width: 622px
 $spritesheet-height: 450px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $advantages_bw-06 $advantages_bw-07 $advantages_bw-08 $advantages_bw-09 $icons_cart $icons_comparison $icons_person $icons_search $icons_to_left_arrow-green $icons_to_right_arrow-green $insta $prop1 $prop2 $prop3 $skype $vk
+$spritesheet-sprites: $advantages_bw-06 $advantages_bw-07 $advantages_bw-08 $advantages_bw-09 $checkbox $icons_cart $icons_comparison $icons_person $icons_search $icons_to_left_arrow-green $icons_to_right_arrow-green $insta $marker $prop1 $prop2 $prop3 $skype $vk
 $spritesheet: 622px 450px 'sprite.png' $spritesheet-sprites
 
 /*
