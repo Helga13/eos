@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+	<title>Коллекции</title>
+	//= includes/head.html
+	<body>
+	//= includes/header.html
+	//= includes/sidebar_left.html
+	//= includes/sidebar_right.html
+	<div class="main_content">
+		<div class="row wrap">
+			<div class="title_block_wrap">
+				<div class="title_block"><span class="title_block__inner">Матрасы</span></div>
+			</div>
+		</div>
+		<div class="row wrap left_col_wrap">
+			<div class="left_col">
+				<div class="subtitle">Подбор матраса</div>
+				<div class="left_col__inner">
+					<div class="title">Основные параметры</div>
+					<div class="criteria_block">
+							<div class="subtitle_block">Цена</div>
+								<div class="form_mode">
+									<div class="field">
+										<label for="minCost">от</label> <input class="input_small" type="text" id="minCost" value="210">
+									</div>
+									<div class="field">
+										<label for="maxCost">до</label> <input class="input_small" type="text" id="maxCost" value="1500">
+									</div>
+								</div>
+								<div class="slider_ui js-sliderCost"></div>
+						</div>
+						<div class="criteria_block">
+							<div class="subtitle_block">Форма матраса</div>
+							<div class="tabs_block mattress_shape">
+								<ul class="tabs_caption">
+									<li class="tab">Прямоугольный</li>
+									<li class="tab active">Круглый</li>
+								</ul>
+								<div class="subtitle_block">Размер матраса</div>
+								<div class="tabs_content">
+									<div class="select_block">
+										<img src="img/mattress/mattress_rectangular_width.png" alt="">
+										<span class="sign">Ширина</span>
+									</div>
+									<div class="select_block">
+										<select class="js-select select">
+											<option value="1">180</option>
+											<option value="2">200</option>
+											<option value="3">210</option>
+											<option value="4">220</option>
+										</select>
+									</div>
+									<div class="select_block">
+										<img src="img/mattress/mattress_rectangular_length.png" alt="">
+										<span class="sign">Длина</span>
+									</div>
+									<div class="select_block">
+										<select class="js-select select">
+											<option value="1">180</option>
+											<option value="2">200</option>
+											<option value="3">210</option>
+											<option value="4">220</option>
+										</select>
+									</div>
+								</div>
+								<div class="tabs_content active">
+									<div class="select_block">
+										<img src="img/mattress/mattress_round_radius.png" alt="">
+										<span class="sign">Радиус</span>
+									</div>
+									<div class="select_block">
+										<select class="js-select select">
+											<option value="1">180</option>
+											<option value="2">200</option>
+											<option value="3">210</option>
+											<option value="4">220</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="criteria_block notch_block">
+							<div class="subtitle_block">Жесткость</div>
+							<div class="field">
+                <label for="notch_top">Жесткость верхней стороны:</label>
+                <div class="notch" id="notch_top">
+                  <div>
+                    <input id="notch_top-3" type="radio" name="notch_top">
+                    <label for="notch_top-3"></label>
+                    <input id="notch_top-2" type="radio" name="notch_top">
+                    <label for="notch_top-2"></label>
+                    <input id="notch_top-1" type="radio" name="notch_top">
+                    <label for="notch_top-1"></label>
+                    <input id="notch_top-0" type="radio" name="notch_top">
+                    <label for="notch_top-0"></label>
+                  </div>
+                </div>
+                <span class="notch_caption">оптимальная жесткость</span>
+              </div>
+              <div class="field">
+                <label for="notch_bottom">Жестоксть нижней стороны:</label>
+                <div class="notch" id="notch_bottom">
+                  <div>
+                    <input id="notch_bottom-3" type="radio" name="notch_bottom">
+                    <label for="notch_bottom-3"></label>
+                    <input id="notch_bottom-2" type="radio" name="notch_bottom">
+                    <label for="notch_bottom-2"></label>
+                    <input id="notch_bottom-1" type="radio" name="notch_bottom">
+                    <label for="notch_bottom-1"></label>
+                    <input id="notch_bottom-0" type="radio" name="notch_bottom">
+                    <label for="notch_bottom-0"></label>
+                  </div>
+                </div>
+                <span class="notch_caption">средняя жесткость</span>
+              </div>
+						</div>
+						<div class="criteria_block">
+							<div class="subtitle_block">Вес</div>
+								<div class="form_mode">
+									<div class="field">
+										<label for="minWeight">от</label> <input class="input_small" type="text" id="minWeight" value="6">
+									</div>
+									<div class="field">
+										<label for="maxWeight">до</label> <input class="input_small" type="text" id="maxWeight" value="20">
+									</div>
+								</div>
+								<div class="slider_ui js-sliderWeight" id="slider"></div>
+						</div>
+						<hr>
+						<div class="additional_options"><span>Дополнительные опции</span></div>
+						<div class="criteria_block">
+							<div class="subtitle_block">Высота</div>
+								<div class="form_mode">
+									<div class="field">
+										<label for="minHeight">от</label> <input class="input_small" type="text" id="minHeight" value="10">
+									</div>
+									<div class="field">
+										<label for="maxHeight">до</label> <input class="input_small" type="text" id="maxHeight" value="30">
+									</div>
+								</div>
+								<div class="slider_ui js-sliderHeight" id="slider"></div>
+						</div>
+						<div class="checkbox_block">
+							<div class="subtitle_block">Пружинный блок</div>
+							<div class="checkbox_field">
+								<input id="springless" type="checkbox" checked>
+								<label for="springless"><span class="checkbox"></span>Беспружинный матрас</label>
+							</div>
+							<div class="checkbox_field">
+								<input id="d_springless" type="checkbox">
+								<label for="d_springless"><span class="checkbox"></span>Зависимый пружинный блок</label>
+							</div>
+							<div class="checkbox_field">
+								<input id="i_springless" type="checkbox">
+								<label for="i_springless"><span class="checkbox"></span>Независимый пружинный блок</label>
+							</div>
+						</div>
+						<div class="checkbox_block">
+							<div class="subtitle_block">Особенности</div>
+							<div class="checkbox_field">
+								<input id="quality" type="checkbox" checked>
+								<label for="quality"><span class="checkbox"></span>Детский</label>
+							</div>
+						</div>
+				</div>
+				
+			</div>
+			<div class="right_col">
+				<div class="subtitle">Коллекции матрасов</div>
+					<div class="collection_block">
+						<div class="collection_col col2">
+							<div class="collection_col__wrap">
+								<div class="title_block_wrap">
+									<div class="title_block ideal"><span class="title_block__inner">Идеал</span></div>
+								</div>
+								<div class="collection_col__img">
+									<img src="img/collections/ideal.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="collection_col col1">
+							<div class="collection_col__wrap">
+								<div class="title_block_wrap">
+									<div class="title_block elites"><span class="title_block__inner">Элит</span></div>
+								</div>
+								<div class="collection_col__img">
+									<img src="img/collections/elites.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="collection_col col1">
+							<div class="collection_col__wrap">
+								<div class="title_block_wrap">
+									<div class="title_block prime"><span class="title_block__inner">Премьер</span></div>
+								</div>
+								<div class="collection_col__img">
+									<img src="img/collections/prime.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="collection_col col2">
+							<div class="collection_col__wrap">
+								<div class="title_block_wrap">
+									<div class="title_block lite"><span class="title_block__inner">Лайт</span></div>
+								</div>
+								<div class="collection_col__img">
+									<img src="img/collections/lite.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="collection_col col2">
+							<div class="collection_col__wrap">
+								<div class="title_block_wrap">
+									<div class="title_block aspect"><span class="title_block__inner">Аспект</span></div>
+								</div>
+								<div class="collection_col__img">
+									<img src="img/collections/aspect.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="collection_col col1">
+							<div class="collection_col__wrap">
+								<div class="title_block_wrap">
+									<div class="title_block optima"><span class="title_block__inner">Оптима</span></div>
+								</div>
+								<div class="collection_col__img">
+									<img src="img/collections/optima.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="collection_col col3">
+							<div class="collection_col__wrap">
+								<div class="title_block_wrap">
+									<div class="title_block childly"><span class="title_block__inner">Детские матрасы</span></div>
+								</div>
+								<div class="collection_col__img">
+									<img src="img/collections/childly.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+
+
+	</div>
+	//= includes/footer.html
+	//= includes/script.html
+	</body>
+</html>

@@ -105,17 +105,63 @@ $('input#maxTime').change(function(){
 	range: true,
 	step: 1,
 	stop: function(event, ui) {
-		$('input#minCost').val($('.js-sliderPrice').slider("values",0));
-		$('input#maxCost').val($('.js-sliderPrice').slider("values",1));
+		$('input#minPrice').val($('.js-sliderPrice').slider("values",0));
+		$('input#maxPrice').val($('.js-sliderPrice').slider("values",1));
 		
     },
     slide: function(event, ui){
-		$('input#minCost').val($('.js-sliderPrice').slider("values",0));
-		$('input#maxCost').val($('.js-sliderPrice').slider("values",1));
+		$('input#minPrice').val($('.js-sliderPrice').slider("values",0));
+		$('input#maxPrice').val($('.js-sliderPrice').slider("values",1));
     }
 });
 
-jQuery('input#minCost').change(function(){
+$('input#minPrice').change(function(){
+
+	var value1=$('input#minPrice').val();
+	var value2=$('input#maxPrice').val();
+
+    if(parseInt(value1) > parseInt(value2)){
+		value1 = value2;
+		$('input#minPrice').val(value1);
+	}
+	$('.js-sliderPrice').slider("values",0,value1);	
+});
+
+	
+$('input#maxPrice').change(function(){
+		
+	var value1=$('input#minPrice').val();
+	var value2=$('input#maxPrice').val();
+	
+	if (value2 > 40) { value2 = 40; $('input#maxPrice').val(40)}
+
+	if(parseInt(value1) > parseInt(value2)){
+		value2 = value1;
+		$('input#maxPrice').val(value2);
+	}
+	$('.js-sliderPrice').slider("values",1,value2);
+});
+	
+	// slider price
+	
+	$('.js-sliderCost').slider({
+	min: 190,
+	max: 2000,
+	values: [210,1500],
+	range: true,
+	step: 10,
+	stop: function(event, ui) {
+		$('input#minCost').val($('.js-sliderCost').slider("values",0));
+		$('input#maxCost').val($('.js-sliderCost').slider("values",1));
+		
+    },
+    slide: function(event, ui){
+		$('input#minCost').val($('.js-sliderCost').slider("values",0));
+		$('input#maxCost').val($('.js-sliderCost').slider("values",1));
+    }
+});
+
+$('input#minCost').change(function(){
 
 	var value1=$('input#minCost').val();
 	var value2=$('input#maxCost').val();
@@ -124,7 +170,7 @@ jQuery('input#minCost').change(function(){
 		value1 = value2;
 		$('input#minCost').val(value1);
 	}
-	$('.js-sliderPrice').slider("values",0,value1);	
+	$('.js-sliderCost').slider("values",0,value1);	
 });
 
 	
@@ -139,7 +185,99 @@ $('input#maxCost').change(function(){
 		value2 = value1;
 		$('input#maxCost').val(value2);
 	}
-	$('.js-sliderPrice').slider("values",1,value2);
+	$('.js-sliderCost').slider("values",1,value2);
+});
+
+	// slider weight
+	
+	$('.js-sliderWeight').slider({
+	min: 3,
+	max: 25,
+	values: [6,20],
+	range: true,
+	step: 1,
+	stop: function(event, ui) {
+		$('input#minWeight').val($('.js-sliderWeight').slider("values",0));
+		$('input#maxWeight').val($('.js-sliderWeight').slider("values",1));
+		
+    },
+    slide: function(event, ui){
+		$('input#minWeight').val($('.js-sliderWeight').slider("values",0));
+		$('input#maxWeight').val($('.js-sliderWeight').slider("values",1));
+    }
+});
+
+$('input#minWeight').change(function(){
+
+	var value1=$('input#minWeight').val();
+	var value2=$('input#maxWeight').val();
+
+    if(parseInt(value1) > parseInt(value2)){
+		value1 = value2;
+		$('input#minWeight').val(value1);
+	}
+	$('.js-sliderWeight').slider("values",0,value1);	
+});
+
+	
+$('input#maxWeight').change(function(){
+		
+	var value1=$('input#minWeight').val();
+	var value2=$('input#maxWeight').val();
+	
+	if (value2 > 40) { value2 = 40; $('input#maxWeight').val(40)}
+
+	if(parseInt(value1) > parseInt(value2)){
+		value2 = value1;
+		$('input#maxWeight').val(value2);
+	}
+	$('.js-sliderWeight').slider("values",1,value2);
+});
+	
+	// slider height
+	
+	$('.js-sliderHeight').slider({
+	min: 0,
+	max: 40,
+	values: [10,30],
+	range: true,
+	step: 1,
+	stop: function(event, ui) {
+		$('input#minHeight').val($('.js-sliderHeight').slider("values",0));
+		$('input#maxHeight').val($('.js-sliderHeight').slider("values",1));
+		
+    },
+    slide: function(event, ui){
+		$('input#minHeight').val($('.js-sliderHeight').slider("values",0));
+		$('input#maxHeight').val($('.js-sliderHeight').slider("values",1));
+    }
+});
+
+$('input#minHeight').change(function(){
+
+	var value1=$('input#minHeight').val();
+	var value2=$('input#maxHeight').val();
+
+    if(parseInt(value1) > parseInt(value2)){
+		value1 = value2;
+		$('input#minHeight').val(value1);
+	}
+	$('.js-sliderHeight').slider("values",0,value1);	
+});
+
+	
+$('input#maxHeight').change(function(){
+		
+	var value1=$('input#minHeight').val();
+	var value2=$('input#maxHeight').val();
+	
+	if (value2 > 40) { value2 = 40; $('input#maxHeight').val(40)}
+
+	if(parseInt(value1) > parseInt(value2)){
+		value2 = value1;
+		$('input#maxHeight').val(value2);
+	}
+	$('.js-sliderWeight').slider("values",1,value2);
 });
 
 
