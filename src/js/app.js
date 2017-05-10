@@ -52,99 +52,99 @@ $(document).ready(function () {
 	
 	// slider times
 
-jQuery('.js-sliderTime').slider({
+$('.js-sliderTime').slider({
 	min: 8,
 	max: 19,
 	values: [9,18],
 	range: true,
 	step: 1,
 	stop: function(event, ui) {
-		jQuery('input#minTime').val(jQuery('.js-sliderTime').slider("values",0));
-		jQuery('input#maxTime').val(jQuery('.js-sliderTime').slider("values",1));
+		$('input#minTime').val($('.js-sliderTime').slider("values",0));
+		$('input#maxTime').val($('.js-sliderTime').slider("values",1));
 		
     },
     slide: function(event, ui){
-		jQuery('input#minTime').val(jQuery('.js-sliderTime').slider("values",0));
-		jQuery('input#maxTime').val(jQuery('.js-sliderTime').slider("values",1));
+		$('input#minTime').val($('.js-sliderTime').slider("values",0));
+		$('input#maxTime').val($('.js-sliderTime').slider("values",1));
     }
 });
 
-jQuery('input#minTime').change(function(){
+$('input#minTime').change(function(){
 
-	var value1=jQuery('input#minTime').val();
-	var value2=jQuery('input#maxTime').val();
+	var value1=$('input#minTime').val();
+	var value2=$('input#maxTime').val();
 
     if(parseInt(value1) > parseInt(value2)){
 		value1 = value2;
-		jQuery('input#minTime').val(value1);
+		$('input#minTime').val(value1);
 	}
-	jQuery('.js-sliderTime').slider("values",0,value1);	
+	$('.js-sliderTime').slider("values",0,value1);	
 });
 
 	
-jQuery('input#maxTime').change(function(){
+$('input#maxTime').change(function(){
 		
-	var value1=jQuery('input#minTime').val();
-	var value2=jQuery('input#maxTime').val();
+	var value1=$('input#minTime').val();
+	var value2=$('input#maxTime').val();
 	
-	if (value2 > 19) { value2 = 19; jQuery('input#maxTime').val(19)}
+	if (value2 > 19) { value2 = 19; $('input#maxTime').val(19)}
 
 	if(parseInt(value1) > parseInt(value2)){
 		value2 = value1;
-		jQuery('input#maxTime').val(value2);
+		$('input#maxTime').val(value2);
 	}
-	jQuery('.js-sliderTime').slider("values",1,value2);
+	$('.js-sliderTime').slider("values",1,value2);
 });
 	
 	// slider delivery price
 	
-	jQuery('.js-sliderPrice').slider({
+	$('.js-sliderPrice').slider({
 	min: 0,
 	max: 40,
 	values: [10,30],
 	range: true,
 	step: 1,
 	stop: function(event, ui) {
-		jQuery('input#minCost').val(jQuery('.js-sliderPrice').slider("values",0));
-		jQuery('input#maxCost').val(jQuery('.js-sliderPrice').slider("values",1));
+		$('input#minCost').val($('.js-sliderPrice').slider("values",0));
+		$('input#maxCost').val($('.js-sliderPrice').slider("values",1));
 		
     },
     slide: function(event, ui){
-		jQuery('input#minCost').val(jQuery('.js-sliderPrice').slider("values",0));
-		jQuery('input#maxCost').val(jQuery('.js-sliderPrice').slider("values",1));
+		$('input#minCost').val($('.js-sliderPrice').slider("values",0));
+		$('input#maxCost').val($('.js-sliderPrice').slider("values",1));
     }
 });
 
 jQuery('input#minCost').change(function(){
 
-	var value1=jQuery('input#minCost').val();
-	var value2=jQuery('input#maxCost').val();
+	var value1=$('input#minCost').val();
+	var value2=$('input#maxCost').val();
 
     if(parseInt(value1) > parseInt(value2)){
 		value1 = value2;
-		jQuery('input#minCost').val(value1);
+		$('input#minCost').val(value1);
 	}
-	jQuery('.js-sliderPrice').slider("values",0,value1);	
+	$('.js-sliderPrice').slider("values",0,value1);	
 });
 
 	
-jQuery('input#maxCost').change(function(){
+$('input#maxCost').change(function(){
 		
-	var value1=jQuery('input#minCost').val();
-	var value2=jQuery('input#maxCost').val();
+	var value1=$('input#minCost').val();
+	var value2=$('input#maxCost').val();
 	
-	if (value2 > 19) { value2 = 19; jQuery('input#maxCost').val(19)}
+	if (value2 > 40) { value2 = 40; $('input#maxCost').val(40)}
 
 	if(parseInt(value1) > parseInt(value2)){
 		value2 = value1;
-		jQuery('input#maxCost').val(value2);
+		$('input#maxCost').val(value2);
 	}
-	jQuery('.js-sliderPrice').slider("values",1,value2);
+	$('.js-sliderPrice').slider("values",1,value2);
 });
 
 
 // фильтрация ввода в поля
-	jQuery('input').keypress(function(event){
+	$('input').keypress(function(event){
 		var key, keyChar;
 		if(!event) var event = window.event;
 		
