@@ -378,6 +378,7 @@ input[type=checkbox]:checked+label .checkbox::after {
 
 .sidebar_right{
 	float: right;
+	width: 90px;
 	.nav_link{
 		background-color: #fff;
 		width: 90px;
@@ -422,6 +423,15 @@ input[type=checkbox]:checked+label .checkbox::after {
 			opacity: 1;
 		}
 	}
+}
+
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+.stop {
+  position: relative;
+  z-index: 101;
 }
 
 /* --- footer --- */
