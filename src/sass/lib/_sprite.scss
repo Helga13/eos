@@ -11,16 +11,16 @@
   $spritesheet: width height image $spritesheet-sprites
   */
 $advantages_bw-06-name: 'advantages_bw-06'
-$advantages_bw-06-x: 102px
-$advantages_bw-06-y: 348px
-$advantages_bw-06-offset-x: -102px
-$advantages_bw-06-offset-y: -348px
+$advantages_bw-06-x: 348px
+$advantages_bw-06-y: 174px
+$advantages_bw-06-offset-x: -348px
+$advantages_bw-06-offset-y: -174px
 $advantages_bw-06-width: 102px
 $advantages_bw-06-height: 102px
 $advantages_bw-06-total-width: 622px
 $advantages_bw-06-total-height: 450px
 $advantages_bw-06-image: 'sprite.png'
-$advantages_bw-06: 102px 348px -102px -348px 102px 102px 622px 450px 'sprite.png' 'advantages_bw-06'
+$advantages_bw-06: 348px 174px -348px -174px 102px 102px 622px 450px 'sprite.png' 'advantages_bw-06'
 $advantages_bw-07-name: 'advantages_bw-07'
 $advantages_bw-07-x: 204px
 $advantages_bw-07-y: 348px
@@ -33,185 +33,218 @@ $advantages_bw-07-total-height: 450px
 $advantages_bw-07-image: 'sprite.png'
 $advantages_bw-07: 204px 348px -204px -348px 102px 102px 622px 450px 'sprite.png' 'advantages_bw-07'
 $advantages_bw-08-name: 'advantages_bw-08'
-$advantages_bw-08-x: 348px
-$advantages_bw-08-y: 174px
-$advantages_bw-08-offset-x: -348px
-$advantages_bw-08-offset-y: -174px
+$advantages_bw-08-x: 0px
+$advantages_bw-08-y: 348px
+$advantages_bw-08-offset-x: 0px
+$advantages_bw-08-offset-y: -348px
 $advantages_bw-08-width: 102px
 $advantages_bw-08-height: 102px
 $advantages_bw-08-total-width: 622px
 $advantages_bw-08-total-height: 450px
 $advantages_bw-08-image: 'sprite.png'
-$advantages_bw-08: 348px 174px -348px -174px 102px 102px 622px 450px 'sprite.png' 'advantages_bw-08'
+$advantages_bw-08: 0px 348px 0px -348px 102px 102px 622px 450px 'sprite.png' 'advantages_bw-08'
 $advantages_bw-09-name: 'advantages_bw-09'
-$advantages_bw-09-x: 0px
+$advantages_bw-09-x: 102px
 $advantages_bw-09-y: 348px
-$advantages_bw-09-offset-x: 0px
+$advantages_bw-09-offset-x: -102px
 $advantages_bw-09-offset-y: -348px
 $advantages_bw-09-width: 102px
 $advantages_bw-09-height: 102px
 $advantages_bw-09-total-width: 622px
 $advantages_bw-09-total-height: 450px
 $advantages_bw-09-image: 'sprite.png'
-$advantages_bw-09: 0px 348px 0px -348px 102px 102px 622px 450px 'sprite.png' 'advantages_bw-09'
+$advantages_bw-09: 102px 348px -102px -348px 102px 102px 622px 450px 'sprite.png' 'advantages_bw-09'
 $checkbox-name: 'checkbox'
-$checkbox-x: 582px
-$checkbox-y: 144px
-$checkbox-offset-x: -582px
-$checkbox-offset-y: -144px
+$checkbox-x: 597px
+$checkbox-y: 135px
+$checkbox-offset-x: -597px
+$checkbox-offset-y: -135px
 $checkbox-width: 14px
 $checkbox-height: 12px
 $checkbox-total-width: 622px
 $checkbox-total-height: 450px
 $checkbox-image: 'sprite.png'
-$checkbox: 582px 144px -582px -144px 14px 12px 622px 450px 'sprite.png' 'checkbox'
+$checkbox: 597px 135px -597px -135px 14px 12px 622px 450px 'sprite.png' 'checkbox'
+$icons_bin-name: 'icons_bin'
+$icons_bin-x: 522px
+$icons_bin-y: 100px
+$icons_bin-offset-x: -522px
+$icons_bin-offset-y: -100px
+$icons_bin-width: 75px
+$icons_bin-height: 82px
+$icons_bin-total-width: 622px
+$icons_bin-total-height: 450px
+$icons_bin-image: 'sprite.png'
+$icons_bin: 522px 100px -522px -100px 75px 82px 622px 450px 'sprite.png' 'icons_bin'
 $icons_cart-name: 'icons_cart'
 $icons_cart-x: 522px
-$icons_cart-y: 160px
+$icons_cart-y: 242px
 $icons_cart-offset-x: -522px
-$icons_cart-offset-y: -160px
+$icons_cart-offset-y: -242px
 $icons_cart-width: 60px
 $icons_cart-height: 60px
 $icons_cart-total-width: 622px
 $icons_cart-total-height: 450px
 $icons_cart-image: 'sprite.png'
-$icons_cart: 522px 160px -522px -160px 60px 60px 622px 450px 'sprite.png' 'icons_cart'
+$icons_cart: 522px 242px -522px -242px 60px 60px 622px 450px 'sprite.png' 'icons_cart'
 $icons_comparison-name: 'icons_comparison'
 $icons_comparison-x: 522px
-$icons_comparison-y: 100px
+$icons_comparison-y: 182px
 $icons_comparison-offset-x: -522px
-$icons_comparison-offset-y: -100px
+$icons_comparison-offset-y: -182px
 $icons_comparison-width: 60px
 $icons_comparison-height: 60px
 $icons_comparison-total-width: 622px
 $icons_comparison-total-height: 450px
 $icons_comparison-image: 'sprite.png'
-$icons_comparison: 522px 100px -522px -100px 60px 60px 622px 450px 'sprite.png' 'icons_comparison'
+$icons_comparison: 522px 182px -522px -182px 60px 60px 622px 450px 'sprite.png' 'icons_comparison'
+$icons_minus-name: 'icons_minus'
+$icons_minus-x: 570px
+$icons_minus-y: 302px
+$icons_minus-offset-x: -570px
+$icons_minus-offset-y: -302px
+$icons_minus-width: 44px
+$icons_minus-height: 44px
+$icons_minus-total-width: 622px
+$icons_minus-total-height: 450px
+$icons_minus-image: 'sprite.png'
+$icons_minus: 570px 302px -570px -302px 44px 44px 622px 450px 'sprite.png' 'icons_minus'
 $icons_person-name: 'icons_person'
 $icons_person-x: 582px
-$icons_person-y: 100px
+$icons_person-y: 182px
 $icons_person-offset-x: -582px
-$icons_person-offset-y: -100px
+$icons_person-offset-y: -182px
 $icons_person-width: 36px
 $icons_person-height: 44px
 $icons_person-total-width: 622px
 $icons_person-total-height: 450px
 $icons_person-image: 'sprite.png'
-$icons_person: 582px 100px -582px -100px 36px 44px 622px 450px 'sprite.png' 'icons_person'
+$icons_person: 582px 182px -582px -182px 36px 44px 622px 450px 'sprite.png' 'icons_person'
+$icons_plus-name: 'icons_plus'
+$icons_plus-x: 522px
+$icons_plus-y: 346px
+$icons_plus-offset-x: -522px
+$icons_plus-offset-y: -346px
+$icons_plus-width: 44px
+$icons_plus-height: 44px
+$icons_plus-total-width: 622px
+$icons_plus-total-height: 450px
+$icons_plus-image: 'sprite.png'
+$icons_plus: 522px 346px -522px -346px 44px 44px 622px 450px 'sprite.png' 'icons_plus'
 $icons_search-name: 'icons_search'
 $icons_search-x: 522px
-$icons_search-y: 220px
+$icons_search-y: 302px
 $icons_search-offset-x: -522px
-$icons_search-offset-y: -220px
+$icons_search-offset-y: -302px
 $icons_search-width: 48px
 $icons_search-height: 44px
 $icons_search-total-width: 622px
 $icons_search-total-height: 450px
 $icons_search-image: 'sprite.png'
-$icons_search: 522px 220px -522px -220px 48px 44px 622px 450px 'sprite.png' 'icons_search'
+$icons_search: 522px 302px -522px -302px 48px 44px 622px 450px 'sprite.png' 'icons_search'
 $icons_to_left_arrow-green-name: 'icons_to_left_arrow-green'
-$icons_to_left_arrow-green-x: 0px
+$icons_to_left_arrow-green-x: 348px
 $icons_to_left_arrow-green-y: 0px
-$icons_to_left_arrow-green-offset-x: 0px
+$icons_to_left_arrow-green-offset-x: -348px
 $icons_to_left_arrow-green-offset-y: 0px
 $icons_to_left_arrow-green-width: 174px
 $icons_to_left_arrow-green-height: 174px
 $icons_to_left_arrow-green-total-width: 622px
 $icons_to_left_arrow-green-total-height: 450px
 $icons_to_left_arrow-green-image: 'sprite.png'
-$icons_to_left_arrow-green: 0px 0px 0px 0px 174px 174px 622px 450px 'sprite.png' 'icons_to_left_arrow-green'
+$icons_to_left_arrow-green: 348px 0px -348px 0px 174px 174px 622px 450px 'sprite.png' 'icons_to_left_arrow-green'
 $icons_to_right_arrow-green-name: 'icons_to_right_arrow-green'
-$icons_to_right_arrow-green-x: 348px
-$icons_to_right_arrow-green-y: 0px
-$icons_to_right_arrow-green-offset-x: -348px
-$icons_to_right_arrow-green-offset-y: 0px
+$icons_to_right_arrow-green-x: 174px
+$icons_to_right_arrow-green-y: 174px
+$icons_to_right_arrow-green-offset-x: -174px
+$icons_to_right_arrow-green-offset-y: -174px
 $icons_to_right_arrow-green-width: 174px
 $icons_to_right_arrow-green-height: 174px
 $icons_to_right_arrow-green-total-width: 622px
 $icons_to_right_arrow-green-total-height: 450px
 $icons_to_right_arrow-green-image: 'sprite.png'
-$icons_to_right_arrow-green: 348px 0px -348px 0px 174px 174px 622px 450px 'sprite.png' 'icons_to_right_arrow-green'
+$icons_to_right_arrow-green: 174px 174px -174px -174px 174px 174px 622px 450px 'sprite.png' 'icons_to_right_arrow-green'
 $insta-name: 'insta'
-$insta-x: 306px
-$insta-y: 348px
-$insta-offset-x: -306px
-$insta-offset-y: -348px
+$insta-x: 522px
+$insta-y: 0px
+$insta-offset-x: -522px
+$insta-offset-y: 0px
 $insta-width: 100px
 $insta-height: 100px
 $insta-total-width: 622px
 $insta-total-height: 450px
 $insta-image: 'sprite.png'
-$insta: 306px 348px -306px -348px 100px 100px 622px 450px 'sprite.png' 'insta'
+$insta: 522px 0px -522px 0px 100px 100px 622px 450px 'sprite.png' 'insta'
 $marker-name: 'marker'
-$marker-x: 582px
-$marker-y: 160px
-$marker-offset-x: -582px
-$marker-offset-y: -160px
+$marker-x: 597px
+$marker-y: 100px
+$marker-offset-x: -597px
+$marker-offset-y: -100px
 $marker-width: 24px
 $marker-height: 35px
 $marker-total-width: 622px
 $marker-total-height: 450px
 $marker-image: 'sprite.png'
-$marker: 582px 160px -582px -160px 24px 35px 622px 450px 'sprite.png' 'marker'
+$marker: 597px 100px -597px -100px 24px 35px 622px 450px 'sprite.png' 'marker'
 $prop1-name: 'prop1'
-$prop1-x: 174px
+$prop1-x: 0px
 $prop1-y: 174px
-$prop1-offset-x: -174px
+$prop1-offset-x: 0px
 $prop1-offset-y: -174px
 $prop1-width: 174px
 $prop1-height: 174px
 $prop1-total-width: 622px
 $prop1-total-height: 450px
 $prop1-image: 'sprite.png'
-$prop1: 174px 174px -174px -174px 174px 174px 622px 450px 'sprite.png' 'prop1'
+$prop1: 0px 174px 0px -174px 174px 174px 622px 450px 'sprite.png' 'prop1'
 $prop2-name: 'prop2'
-$prop2-x: 0px
-$prop2-y: 174px
-$prop2-offset-x: 0px
-$prop2-offset-y: -174px
+$prop2-x: 174px
+$prop2-y: 0px
+$prop2-offset-x: -174px
+$prop2-offset-y: 0px
 $prop2-width: 174px
 $prop2-height: 174px
 $prop2-total-width: 622px
 $prop2-total-height: 450px
 $prop2-image: 'sprite.png'
-$prop2: 0px 174px 0px -174px 174px 174px 622px 450px 'sprite.png' 'prop2'
+$prop2: 174px 0px -174px 0px 174px 174px 622px 450px 'sprite.png' 'prop2'
 $prop3-name: 'prop3'
-$prop3-x: 174px
+$prop3-x: 0px
 $prop3-y: 0px
-$prop3-offset-x: -174px
+$prop3-offset-x: 0px
 $prop3-offset-y: 0px
 $prop3-width: 174px
 $prop3-height: 174px
 $prop3-total-width: 622px
 $prop3-total-height: 450px
 $prop3-image: 'sprite.png'
-$prop3: 174px 0px -174px 0px 174px 174px 622px 450px 'sprite.png' 'prop3'
+$prop3: 0px 0px 0px 0px 174px 174px 622px 450px 'sprite.png' 'prop3'
 $skype-name: 'skype'
-$skype-x: 406px
+$skype-x: 306px
 $skype-y: 348px
-$skype-offset-x: -406px
+$skype-offset-x: -306px
 $skype-offset-y: -348px
 $skype-width: 100px
 $skype-height: 100px
 $skype-total-width: 622px
 $skype-total-height: 450px
 $skype-image: 'sprite.png'
-$skype: 406px 348px -406px -348px 100px 100px 622px 450px 'sprite.png' 'skype'
+$skype: 306px 348px -306px -348px 100px 100px 622px 450px 'sprite.png' 'skype'
 $vk-name: 'vk'
-$vk-x: 522px
-$vk-y: 0px
-$vk-offset-x: -522px
-$vk-offset-y: 0px
+$vk-x: 406px
+$vk-y: 348px
+$vk-offset-x: -406px
+$vk-offset-y: -348px
 $vk-width: 100px
 $vk-height: 100px
 $vk-total-width: 622px
 $vk-total-height: 450px
 $vk-image: 'sprite.png'
-$vk: 522px 0px -522px 0px 100px 100px 622px 450px 'sprite.png' 'vk'
+$vk: 406px 348px -406px -348px 100px 100px 622px 450px 'sprite.png' 'vk'
 $spritesheet-width: 622px
 $spritesheet-height: 450px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $advantages_bw-06 $advantages_bw-07 $advantages_bw-08 $advantages_bw-09 $checkbox $icons_cart $icons_comparison $icons_person $icons_search $icons_to_left_arrow-green $icons_to_right_arrow-green $insta $marker $prop1 $prop2 $prop3 $skype $vk
+$spritesheet-sprites: $advantages_bw-06 $advantages_bw-07 $advantages_bw-08 $advantages_bw-09 $checkbox $icons_bin $icons_cart $icons_comparison $icons_minus $icons_person $icons_plus $icons_search $icons_to_left_arrow-green $icons_to_right_arrow-green $insta $marker $prop1 $prop2 $prop3 $skype $vk
 $spritesheet: 622px 450px 'sprite.png' $spritesheet-sprites
 
 /*

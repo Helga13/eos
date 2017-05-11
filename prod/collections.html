@@ -1,11 +1,103 @@
 <!doctype html>
 <html>
 	<title>Коллекции</title>
-	//= includes/head.html
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="css/screen.css">
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+	</head>
 	<body>
-	//= includes/header.html
-	//= includes/sidebar_left.html
-	//= includes/sidebar_right.html
+	<header>
+		<div class="header_top">
+			<div class="wrap wrap_mod">
+				<div class="logo">
+					<a href="#">
+						<img class="logo_img" src="img/logo.png" alt="">
+						<p class="logo_text">Пробуждение новых чувств</p>
+					</a>
+				</div>
+				<div class="tabs_block header_phone">
+					<div class="tabs_content active">
+						<a href="tel:+375291234567">+375 29 123-45-67</a>
+					</div>
+					<div class="tabs_content">
+						<a href="tel:+375291234568">+375 29 123-45-68</a>
+					</div>
+					<div class="tabs_content">
+						<a href="tel:+375291234569">+375 29 123-45-69</a>
+					</div>
+					<ul class="tabs_caption">
+						<li class="tab active">Velcom</li>
+						<li class="tab">МТС</li>
+						<li class="tab">Город</li>
+					</ul>
+				</div>
+				<div class="working_hours">
+					<p>09:00-20:00 (рабочие дни)</p>
+					<p>09:00-17:00 (выходные)</p>
+				</div>
+				<div class="back_call">
+					<a href="#" class="btn back_call__btn" data-id="back_call">Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+		<nav class="nav_top">
+			<div class="wrap">
+				<ul class="nav_left">
+					<li><a class="nav_link" href="#">О компании</a></li>
+					<li><a class="nav_link" href="#">Где купить</a></li>
+					<li><a class="nav_link" href="#">Доставка и оплата</a></li>
+					<li><a class="nav_link" href="#">Партнерам</a></li>
+					<li><a class="nav_link" href="#">Контакты</a></li>
+				</ul>
+				<ul class="nav_right">
+					<li><a class="nav_link" href="#"><img class="search" src="img/icons/icons_search.png" alt="">Поиск</a></li>
+					<li class="dropdown">
+						<a class=" js-dropdown nav_link per" href="#">
+							<img class="person" src="img/icons/icons_person.png" alt="">Личный кабинет
+						</a>
+						<ul class="nav_link__dropdown">
+							<li><a class="nav_link" href="#">Вход</a></li>
+							<li><a class="nav_link" href="#">Регистрация</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<ul class="sidebar_left" id="fixblock">
+		<li><a class="nav_link" href="#"><img src="../img/sidebar_left/category_rectangular_matras.png" alt="">Матрасы</a></li>
+		<li><a class="nav_link" href="#"><img src="../img/sidebar_left/category_rectangular_ltopper.png" alt="">Топперы</a></li>
+		<li><a class="nav_link" href="#"><img src="../img/sidebar_left/category_round_namatrasnik.png" alt="">Наматрасники</a></li>
+		<li><a class="nav_link" href="#"><img src="../img/sidebar_left/category_round_podushka.png" alt="">Подушки</a></li>
+		<li><a class="nav_link" href="#"><img src="../img/sidebar_left/category_round_osnovanie.png" alt="">Основания</a></li>
+	</ul>
+	<ul class="sidebar_right" id="fixblock1">
+		<li>
+			<a class="nav_link" href="#">
+				<span class="icon">2</span>
+				<img src="../img/icons/icons_cart.png" alt="">
+				<p>Корзина</p>
+			</a>
+		</li>
+		<li>
+			<a class="nav_link" href="#">
+				<span class="icon">3</span>
+				<img src="../img/icons/icons_comparison.png" alt="">
+				<p>Сравнение</p>
+			</a>
+		</li>
+		<li>
+			<a class="nav_link percent" href="#">
+				<p class="percentage">%</p>
+				Акции
+			</a>
+		</li>
+	</ul>
 	<div class="main_content">
 		<div class="row wrap">
 			<div class="title_block_wrap">
@@ -244,8 +336,76 @@
 
 
 	</div>
-	//= includes/footer.html
-	//= includes/popup.html
-	//= includes/script.html
+	<footer>
+		<div class="footer_top">
+			<div class="wrap wrap_mod">
+				<div class="logo footer_logo">
+					<a href="#">
+						<img class="logo_img" src="img/logo_footer.png" alt="">
+						<p class="logo_text">Пробуждение новых чувств</p>
+					</a>
+				</div>
+				<div class="contacts">
+					<div class="heading">Контакты</div>
+					<p>+375 162 55 65 61</p>
+					<p>+375 29 109 60 09 </p>
+					<p>e-mail: eos@eos.by</p>
+					<div class="socials">
+						<a href="#"><img src="img/icons/skype.png" alt=""></a>
+						<a href="#"><img src="img/icons/insta.png" alt=""></a>
+						<a href="#"><img src="img/icons/vk.png" alt=""></a>
+					</div>
+				</div>
+				<ul class="categories">
+					<li class="heading">Категории товаров</li>
+					<li><a href="#">Матрасы</a></li>
+					<li><a href="#">Топперы</a></li>
+					<li><a href="#">Наматрасники</a></li>
+					<li><a href="#">Подушки</a></li>
+					<li><a href="#">Основания</a></li>
+				</ul>
+				<ul class="information">
+					<li class="heading">Полезная информация</li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Где купить</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Партнерам</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="wrap wrap_mod">
+				<ul class="payment">
+					<li><img src="img/payment/pay.png" alt=""></li>
+				</ul>
+				<div class="address">
+					<p>225040, Республика Беларусь, Брестский район, п. Сосновка, ул. Сосновая 10</p>
+					<p>В торговом реестре с 23 июня 2010г. УНП 190806803. Регистрация №190806803, 22.02.2007, Мингорисполком.</p>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">&copy; УП “ПКФ ЭОСЛЮКС”, 2017</div>
+	</footer>
+	<div class="overlay popup" id="back_call">
+		<section class="popup_content">
+		<a href="#" class="popup_close"><img src="../img/icons/icons_plus.png" alt=""></a>
+			<form action="">
+				<div class="text_block">
+					<div class="section_title">Форма заказа обратного звонка</div>
+					<p class="simple_text">Укажите свой номер телефона, и наш специалист свяжется с вами в ближайшее время.</p>
+				</div>
+				<div class="field">
+					<label for="sample_name" class="">Ваше имя</label>
+					<input name="NAME" class="popup_input" id="sample_name" type="text"> 
+				</div>
+				<div class="field">
+					<label for="sample_phone" class="">Телефон</label>
+					<input name="PHONE" class="popup_input" id="sample_phone" type="text">
+				</div>
+				<button value="Оформить заказ" type="submit" class="request_call">Заказать звонок</button>
+			</form>
+		</section>
+	</div>
+	<script src="js/common.js"></script>
 	</body>
 </html>

@@ -105,17 +105,63 @@ $('input#maxTime').change(function(){
 	range: true,
 	step: 1,
 	stop: function(event, ui) {
-		$('input#minCost').val($('.js-sliderPrice').slider("values",0));
-		$('input#maxCost').val($('.js-sliderPrice').slider("values",1));
+		$('input#minPrice').val($('.js-sliderPrice').slider("values",0));
+		$('input#maxPrice').val($('.js-sliderPrice').slider("values",1));
 		
     },
     slide: function(event, ui){
-		$('input#minCost').val($('.js-sliderPrice').slider("values",0));
-		$('input#maxCost').val($('.js-sliderPrice').slider("values",1));
+		$('input#minPrice').val($('.js-sliderPrice').slider("values",0));
+		$('input#maxPrice').val($('.js-sliderPrice').slider("values",1));
     }
 });
 
-jQuery('input#minCost').change(function(){
+$('input#minPrice').change(function(){
+
+	var value1=$('input#minPrice').val();
+	var value2=$('input#maxPrice').val();
+
+    if(parseInt(value1) > parseInt(value2)){
+		value1 = value2;
+		$('input#minPrice').val(value1);
+	}
+	$('.js-sliderPrice').slider("values",0,value1);	
+});
+
+	
+$('input#maxPrice').change(function(){
+		
+	var value1=$('input#minPrice').val();
+	var value2=$('input#maxPrice').val();
+	
+	if (value2 > 40) { value2 = 40; $('input#maxPrice').val(40)}
+
+	if(parseInt(value1) > parseInt(value2)){
+		value2 = value1;
+		$('input#maxPrice').val(value2);
+	}
+	$('.js-sliderPrice').slider("values",1,value2);
+});
+	
+	// slider price
+	
+	$('.js-sliderCost').slider({
+	min: 190,
+	max: 2000,
+	values: [210,1500],
+	range: true,
+	step: 10,
+	stop: function(event, ui) {
+		$('input#minCost').val($('.js-sliderCost').slider("values",0));
+		$('input#maxCost').val($('.js-sliderCost').slider("values",1));
+		
+    },
+    slide: function(event, ui){
+		$('input#minCost').val($('.js-sliderCost').slider("values",0));
+		$('input#maxCost').val($('.js-sliderCost').slider("values",1));
+    }
+});
+
+$('input#minCost').change(function(){
 
 	var value1=$('input#minCost').val();
 	var value2=$('input#maxCost').val();
@@ -124,7 +170,7 @@ jQuery('input#minCost').change(function(){
 		value1 = value2;
 		$('input#minCost').val(value1);
 	}
-	$('.js-sliderPrice').slider("values",0,value1);	
+	$('.js-sliderCost').slider("values",0,value1);	
 });
 
 	
@@ -139,12 +185,104 @@ $('input#maxCost').change(function(){
 		value2 = value1;
 		$('input#maxCost').val(value2);
 	}
-	$('.js-sliderPrice').slider("values",1,value2);
+	$('.js-sliderCost').slider("values",1,value2);
+});
+
+	// slider weight
+	
+	$('.js-sliderWeight').slider({
+	min: 3,
+	max: 25,
+	values: [6,20],
+	range: true,
+	step: 1,
+	stop: function(event, ui) {
+		$('input#minWeight').val($('.js-sliderWeight').slider("values",0));
+		$('input#maxWeight').val($('.js-sliderWeight').slider("values",1));
+		
+    },
+    slide: function(event, ui){
+		$('input#minWeight').val($('.js-sliderWeight').slider("values",0));
+		$('input#maxWeight').val($('.js-sliderWeight').slider("values",1));
+    }
+});
+
+$('input#minWeight').change(function(){
+
+	var value1=$('input#minWeight').val();
+	var value2=$('input#maxWeight').val();
+
+    if(parseInt(value1) > parseInt(value2)){
+		value1 = value2;
+		$('input#minWeight').val(value1);
+	}
+	$('.js-sliderWeight').slider("values",0,value1);	
+});
+
+	
+$('input#maxWeight').change(function(){
+		
+	var value1=$('input#minWeight').val();
+	var value2=$('input#maxWeight').val();
+	
+	if (value2 > 40) { value2 = 40; $('input#maxWeight').val(40)}
+
+	if(parseInt(value1) > parseInt(value2)){
+		value2 = value1;
+		$('input#maxWeight').val(value2);
+	}
+	$('.js-sliderWeight').slider("values",1,value2);
+});
+	
+	// slider height
+	
+	$('.js-sliderHeight').slider({
+	min: 0,
+	max: 40,
+	values: [10,30],
+	range: true,
+	step: 1,
+	stop: function(event, ui) {
+		$('input#minHeight').val($('.js-sliderHeight').slider("values",0));
+		$('input#maxHeight').val($('.js-sliderHeight').slider("values",1));
+		
+    },
+    slide: function(event, ui){
+		$('input#minHeight').val($('.js-sliderHeight').slider("values",0));
+		$('input#maxHeight').val($('.js-sliderHeight').slider("values",1));
+    }
+});
+
+$('input#minHeight').change(function(){
+
+	var value1=$('input#minHeight').val();
+	var value2=$('input#maxHeight').val();
+
+    if(parseInt(value1) > parseInt(value2)){
+		value1 = value2;
+		$('input#minHeight').val(value1);
+	}
+	$('.js-sliderHeight').slider("values",0,value1);	
+});
+
+	
+$('input#maxHeight').change(function(){
+		
+	var value1=$('input#minHeight').val();
+	var value2=$('input#maxHeight').val();
+	
+	if (value2 > 40) { value2 = 40; $('input#maxHeight').val(40)}
+
+	if(parseInt(value1) > parseInt(value2)){
+		value2 = value1;
+		$('input#maxHeight').val(value2);
+	}
+	$('.js-sliderWeight').slider("values",1,value2);
 });
 
 
 // фильтрация ввода в поля
-	$('input').keypress(function(event){
+	$('.input_small').keypress(function(event){
 		var key, keyChar;
 		if(!event) var event = window.event;
 		
@@ -164,7 +302,65 @@ $('input#maxCost').change(function(){
 	var blockHeight = $('.left_col_wrap').height();
 	$('.left_col__inner').css('height',blockHeight - 88);
 
+	// quantity
+
+	(function(){
+		
+		$('.quantity').on('click','button',function(){
+			var data = $(this).data('direction'),
+				i = $(this).parent().children('input[type="text"]'),
+				val = i.val();
+			if(data == "up"){
+				val++;
+				i.val(val);
+			}else if(data == "down"){
+				if(val == 1) return;
+				val--;
+				i.val(val);
+			}
+		});
+
+	})();
 	
+	// delete basket
+	
+	$('.del').on('click', function(e){
+		e.preventDefault();
+		$(this).parents('.table_row').remove();
+	});
+	
+	// registered_block
+	
+	$('.js-reg').on('click', function(e){
+		e.preventDefault();
+		$(this).next().slideToggle(100);
+	});
+	
+	//popup
+	
+	$('.back_call__btn').click(function (e) {
+        e.preventDefault();
+        var DataId = $(this).attr('data-id');
+        if (typeof DataId == "string") {
+        	$('#'+DataId).css('display', 'block');
+        	$('body').css('overflow', 'hidden');  
+        }
+    });
+    $('.popup').click(function (e) {
+        e = event || window.event
+        if (e.target == this) {
+            $(this).css('display', 'none');
+            $('body').css('overflow', 'auto'); 
+        }
+    });
+	$('.popup_close').click(function (e) {
+         e.preventDefault();
+           $(this).parents('.popup').css('display', 'none');
+           $('body').css('overflow', 'auto'); 
+    });
+    $('.popup .popup_content').click(function(e) {
+		e.stopPropagation();
+	}); 
 	
 	
 	// sticky

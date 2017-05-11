@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+	<title>Корзина</title>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="css/screen.css">
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+	</head>
+	<body>
+	<header>
+		<div class="header_top">
+			<div class="wrap wrap_mod">
+				<div class="logo">
+					<a href="#">
+						<img class="logo_img" src="img/logo.png" alt="">
+						<p class="logo_text">Пробуждение новых чувств</p>
+					</a>
+				</div>
+				<div class="tabs_block header_phone">
+					<div class="tabs_content active">
+						<a href="tel:+375291234567">+375 29 123-45-67</a>
+					</div>
+					<div class="tabs_content">
+						<a href="tel:+375291234568">+375 29 123-45-68</a>
+					</div>
+					<div class="tabs_content">
+						<a href="tel:+375291234569">+375 29 123-45-69</a>
+					</div>
+					<ul class="tabs_caption">
+						<li class="tab active">Velcom</li>
+						<li class="tab">МТС</li>
+						<li class="tab">Город</li>
+					</ul>
+				</div>
+				<div class="working_hours">
+					<p>09:00-20:00 (рабочие дни)</p>
+					<p>09:00-17:00 (выходные)</p>
+				</div>
+				<div class="back_call">
+					<a href="#" class="btn back_call__btn" data-id="back_call">Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+		<nav class="nav_top">
+			<div class="wrap">
+				<ul class="nav_left">
+					<li><a class="nav_link" href="#">О компании</a></li>
+					<li><a class="nav_link" href="#">Где купить</a></li>
+					<li><a class="nav_link" href="#">Доставка и оплата</a></li>
+					<li><a class="nav_link" href="#">Партнерам</a></li>
+					<li><a class="nav_link" href="#">Контакты</a></li>
+				</ul>
+				<ul class="nav_right">
+					<li><a class="nav_link" href="#"><img class="search" src="img/icons/icons_search.png" alt="">Поиск</a></li>
+					<li class="dropdown">
+						<a class=" js-dropdown nav_link per" href="#">
+							<img class="person" src="img/icons/icons_person.png" alt="">Личный кабинет
+						</a>
+						<ul class="nav_link__dropdown">
+							<li><a class="nav_link" href="#">Вход</a></li>
+							<li><a class="nav_link" href="#">Регистрация</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<ul class="sidebar_left" id="fixblock">
+		<li><a class="nav_link" href="#"><img src="../img/sidebar_left/category_rectangular_matras.png" alt="">Матрасы</a></li>
+		<li><a class="nav_link" href="#"><img src="../img/sidebar_left/category_rectangular_ltopper.png" alt="">Топперы</a></li>
+		<li><a class="nav_link" href="#"><img src="../img/sidebar_left/category_round_namatrasnik.png" alt="">Наматрасники</a></li>
+		<li><a class="nav_link" href="#"><img src="../img/sidebar_left/category_round_podushka.png" alt="">Подушки</a></li>
+		<li><a class="nav_link" href="#"><img src="../img/sidebar_left/category_round_osnovanie.png" alt="">Основания</a></li>
+	</ul>
+	<ul class="sidebar_right" id="fixblock1">
+		<li>
+			<a class="nav_link" href="#">
+				<span class="icon">2</span>
+				<img src="../img/icons/icons_cart.png" alt="">
+				<p>Корзина</p>
+			</a>
+		</li>
+		<li>
+			<a class="nav_link" href="#">
+				<span class="icon">3</span>
+				<img src="../img/icons/icons_comparison.png" alt="">
+				<p>Сравнение</p>
+			</a>
+		</li>
+		<li>
+			<a class="nav_link percent" href="#">
+				<p class="percentage">%</p>
+				Акции
+			</a>
+		</li>
+	</ul>
+	<div class="main_content">
+		<div class="row wrap">
+			<div class="title_block_wrap">
+				<div class="title_block"><span class="title_block__inner">Корзина</span></div>
+			</div>
+		</div>
+		<div class="row wrap">
+			<div class="table_basket">
+				<div class="table">
+					<div class="table_row header">
+						<div class="table_cell num">№</div>
+						<div class="table_cell photo">Фото</div>
+						<div class="table_cell name">Название</div>
+						<div class="table_cell col">Размер</div>
+						<div class="table_cell quant">Количество</div>
+						<div class="table_cell price">Цена</div>
+						<div class="table_cell del">Удалить</div>
+					</div>
+					<div class="table_row body">
+						<div class="table_cell num">1</div>
+						<div class="table_cell photo">
+							<img src="img/basket/img1.jpg" alt="">
+						</div>
+						<div class="table_cell name"><a href="#">Тип 6а "Мульти комфорт"</a></div>
+						<div class="table_cell col">180 x 200см</div>
+						<div class="table_cell quant">
+							<div class="quantity">
+								<button class="down" data-direction="down"></button>
+								<input type="text" name="" value="1" class="input">
+								<button class="up" data-direction="up"></button>
+							</div>
+						</div>
+						<div class="table_cell price">320 BYN</div>
+						<div class="table_cell del"><a href="#"><img src="img/icons/icons_bin.png" alt=""></a></div>
+					</div>
+					<div class="table_row body">
+						<div class="table_cell num">2</div>
+						<div class="table_cell photo">
+							<img src="img/basket/img1.jpg" alt="">
+						</div>
+						<div class="table_cell name"><a href="#">Тип 6а "Мульти комфорт"</a></div>
+						<div class="table_cell col">180 x 200см</div>
+						<div class="table_cell quant">
+							<div class="quantity">
+								<button class="down" data-direction="down"></button>
+								<input type="text" name="" value="1" class="input">
+								<button class="up" data-direction="up"></button>
+							</div>
+						</div>
+						<div class="table_cell price"><span class="old_price">320 BYN</span>320 BYN</div>
+						<div class="table_cell del"><a href="#"><img src="img/icons/icons_bin.png" alt=""></a></div>
+					</div>
+					<div class="table_row body">
+						<div class="table_cell num">3</div>
+						<div class="table_cell photo">
+							<img src="img/basket/img1.jpg" alt="">
+						</div>
+						<div class="table_cell name"><a href="#">Тип 6а "Мульти комфорт"</a></div>
+						<div class="table_cell col">180 x 200см</div>
+						<div class="table_cell quant">
+							<div class="quantity">
+								<button class="down" data-direction="down"></button>
+								<input type="text" name="" value="1" class="input">
+								<button class="up" data-direction="up"></button>
+							</div>
+						</div>
+						<div class="table_cell price">320 BYN</div>
+						<div class="table_cell del"><a href="#"><img src="img/icons/icons_bin.png" alt=""></a></div>
+					</div>
+				</div>
+				<a href="#" class="save_basket">Сохранить корзину</a>
+				<div class="caption_block">
+					<div class="table_caption">
+						<div class="total_sum">Общая сумма</div>
+						<div class="total_sum_price">640 BYN</div>
+					</div>
+					<div class="table_caption">
+						<div class="discount">Сумма скидки</div>
+						<div class="discount_price">64 BYN</div>
+					</div>
+					<div class="table_caption">
+						<div class="total">Итого</div>
+						<div class="total_price">576 BYN</div>
+					</div>
+				</div>
+				
+					<div class="form_block_ordering">
+						<form action="">
+							<div class="subtitle">Оформление заказа</div>
+							<div class="order_item">
+								<div class="item_subtitle">Параметры доставки</div>
+								<div class="field">
+									<label for="name">Ф.И.О.</label>
+									<input type="text" id="name">
+									<span class="star">*</span>
+								</div>
+								<div class="field">
+									<label for="phone">Телефон</label>
+									<input type="text" id="phone">
+									<span class="star">*</span>
+								</div>
+								<div class="field">
+									<label for="">Электронная почта</label>
+									<input type="text">
+									<span class="star">*</span>
+								</div>
+								<div class="field">
+									<label for="">Адрес доставки</label>
+									<input type="text">
+									<span class="star">*</span>
+								</div>
+								<div class="field">
+									<label for="">Комментарий</label>
+									<textarea name="" id=""></textarea>
+								</div>
+							</div>
+							<div class="order_item">
+								<a href="#" class="js-reg registered">Уже зарегистрированы?</a>
+								<div class="registered_block">
+									<div class="field">
+										<label for="">Логин</label>
+										<input type="text">
+										<span class="star">*</span>
+									</div>
+									<div class="field">
+										<label for="">Пароль</label>
+										<input type="text">
+										<span class="star">*</span>
+									</div>
+									<a href="#" class="btn_enter">Войти</a>
+								</div>
+							</div>
+							<div class="text_block_order">
+								<p class="simple_text">Для каждого нового клиента в магазине создается учетная запись (пароль высылается на адрес электронной почты, указанный в личных данных). Для дальнейших заказов адресные и персональные данные вводить не потребуется — достаточно ввести адрес E-mail и пароль в форме «Уже зарегистрированы?» или воспользоваться входом для клиентов.</p>
+								<p class="simple_text">При оплате с помощью карты Visa/MasterCard вы будете автоматически перенаправлены на сайт процессингового центра WEBPAY™. Реквизиты платежа передаются по защищенному HTTPS-каналу и обрабатываются без сохранения только процессинговым центром, не поступая в информационную систему нашего магазина. После завершения оформления платежа вы будете перенаправлены обратно на наш сайт.</p>
+								<p class="simple_text">Условия оформления, оплаты и доставки заказа изложены в «Справочнике покупателя». Условия гарантийного обслуживания приведены на странице <a href="#" class="link">Условия гарантии</a>, а необходимые к соблюдению правила эксплуатации — на странице <a href="#" class="link">Правила эксплуатации матраса</a>.</p>
+								<div class="checkbox_block">
+									<div class="checkbox_field">
+										<input id="quality" type="checkbox" checked>
+										<label for="quality"><span class="checkbox"></span>Я ознакомился и согласен с перечисленными выше условиями и правилами</label>
+									</div>
+								</div>
+							</div>
+							<div class="btn_block">
+								<a href="#" class="edit">Вернуться к редактированию корзины</a>
+								<a href="#" class="btn">Перейти к оплате</a>
+							</div>
+						</form>
+					</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer_top">
+			<div class="wrap wrap_mod">
+				<div class="logo footer_logo">
+					<a href="#">
+						<img class="logo_img" src="img/logo_footer.png" alt="">
+						<p class="logo_text">Пробуждение новых чувств</p>
+					</a>
+				</div>
+				<div class="contacts">
+					<div class="heading">Контакты</div>
+					<p>+375 162 55 65 61</p>
+					<p>+375 29 109 60 09 </p>
+					<p>e-mail: eos@eos.by</p>
+					<div class="socials">
+						<a href="#"><img src="img/icons/skype.png" alt=""></a>
+						<a href="#"><img src="img/icons/insta.png" alt=""></a>
+						<a href="#"><img src="img/icons/vk.png" alt=""></a>
+					</div>
+				</div>
+				<ul class="categories">
+					<li class="heading">Категории товаров</li>
+					<li><a href="#">Матрасы</a></li>
+					<li><a href="#">Топперы</a></li>
+					<li><a href="#">Наматрасники</a></li>
+					<li><a href="#">Подушки</a></li>
+					<li><a href="#">Основания</a></li>
+				</ul>
+				<ul class="information">
+					<li class="heading">Полезная информация</li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Где купить</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Партнерам</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="wrap wrap_mod">
+				<ul class="payment">
+					<li><img src="img/payment/pay.png" alt=""></li>
+				</ul>
+				<div class="address">
+					<p>225040, Республика Беларусь, Брестский район, п. Сосновка, ул. Сосновая 10</p>
+					<p>В торговом реестре с 23 июня 2010г. УНП 190806803. Регистрация №190806803, 22.02.2007, Мингорисполком.</p>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">&copy; УП “ПКФ ЭОСЛЮКС”, 2017</div>
+	</footer>
+	<div class="overlay popup" id="back_call">
+		<section class="popup_content">
+		<a href="#" class="popup_close"><img src="../img/icons/icons_plus.png" alt=""></a>
+			<form action="">
+				<div class="text_block">
+					<div class="section_title">Форма заказа обратного звонка</div>
+					<p class="simple_text">Укажите свой номер телефона, и наш специалист свяжется с вами в ближайшее время.</p>
+				</div>
+				<div class="field">
+					<label for="sample_name" class="">Ваше имя</label>
+					<input name="NAME" class="popup_input" id="sample_name" type="text"> 
+				</div>
+				<div class="field">
+					<label for="sample_phone" class="">Телефон</label>
+					<input name="PHONE" class="popup_input" id="sample_phone" type="text">
+				</div>
+				<button value="Оформить заказ" type="submit" class="request_call">Заказать звонок</button>
+			</form>
+		</section>
+	</div>
+	<script src="js/common.js"></script>
+	</body>
+</html>

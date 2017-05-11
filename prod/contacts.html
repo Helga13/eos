@@ -41,7 +41,7 @@
 					<p>09:00-17:00 (выходные)</p>
 				</div>
 				<div class="back_call">
-					<a href="#" class="btn back_call__btn">Заказать звонок</a>
+					<a href="#" class="btn back_call__btn" data-id="back_call">Заказать звонок</a>
 				</div>
 			</div>
 		</div>
@@ -150,10 +150,10 @@
 							<div class="subtitle_block">Стоимость доставки</div>
 								<div class="form_mode">
 									<div class="field">
-										<label for="minCost">от</label> <input class="input_small" type="text" id="minCost" value="10">
+										<label for="minPrice">от</label> <input class="input_small" type="text" id="minPrice" value="10">
 									</div>
 									<div class="field">
-										<label for="maxCost">до</label> <input class="input_small" type="text" id="maxCost" value="30">
+										<label for="maxPrice">до</label> <input class="input_small" type="text" id="maxPrice" value="30">
 									</div>
 								</div>
 								<div class="slider_ui js-sliderPrice"></div>
@@ -298,6 +298,26 @@
 		</div>
 		<div class="copyright">&copy; УП “ПКФ ЭОСЛЮКС”, 2017</div>
 	</footer>
+	<div class="overlay popup" id="back_call">
+		<section class="popup_content">
+		<a href="#" class="popup_close"><img src="../img/icons/icons_plus.png" alt=""></a>
+			<form action="">
+				<div class="text_block">
+					<div class="section_title">Форма заказа обратного звонка</div>
+					<p class="simple_text">Укажите свой номер телефона, и наш специалист свяжется с вами в ближайшее время.</p>
+				</div>
+				<div class="field">
+					<label for="sample_name" class="">Ваше имя</label>
+					<input name="NAME" class="popup_input" id="sample_name" type="text"> 
+				</div>
+				<div class="field">
+					<label for="sample_phone" class="">Телефон</label>
+					<input name="PHONE" class="popup_input" id="sample_phone" type="text">
+				</div>
+				<button value="Оформить заказ" type="submit" class="request_call">Заказать звонок</button>
+			</form>
+		</section>
+	</div>
 	<script src="js/common.js"></script>
 	</body>
 </html>
