@@ -338,7 +338,7 @@ $('input#maxHeight').change(function(){
 	
 	//popup
 	
-	$('.back_call__btn').click(function (e) {
+	$('.js-btn_popup').click(function (e) {
         e.preventDefault();
         var DataId = $(this).attr('data-id');
         if (typeof DataId == "string") {
@@ -362,6 +362,23 @@ $('input#maxHeight').change(function(){
 		e.stopPropagation();
 	}); 
 	
+	// tooltip
+	
+	 $('.js-tooltip').mousemove(function (e) {
+    var tooltip = $(this).next('.tooltip');
+      $(tooltip).css({ 
+                        "top" : e.pageY-270,
+                        "left" : e.pageX-170
+                     })
+                     .show();
+
+    }).mouseout(function () {
+		 var tooltip = $(this).next('.tooltip');
+      $(tooltip).hide().css({
+                        "top" : 0,
+                        "left" : 0
+                    });
+    });
 	
 	
 });
