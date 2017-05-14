@@ -632,12 +632,14 @@ if (document.getElementById('map')) {
 		var myOptions = {
 			zoom: 12
 			, center: new google.maps.LatLng(53.90794316841072, 27.538187408447232)
-			, disableDefaultUI: true
+//			, disableDefaultUI: true
 			, scrollwheel: false
-			, navigationControl: false
+			, mapTypeControl: false
+			, streetViewControl: false
+//			, navigationControl: true
 			, zoomControlOptions: {
 				style: google.maps.ZoomControlStyle.SMALL
-				, position: google.maps.ControlPosition.LEFT_CENTER
+				, position: google.maps.ControlPosition.LEFT_TOP
 			}
 			, mapTypeControlOptions: {
 				mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tehgrayz']
