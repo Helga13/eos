@@ -55,9 +55,18 @@
 					<li><a class="nav_link" href="#">Контакты</a></li>
 				</ul>
 				<ul class="nav_right">
-					<li><a class="nav_link" href="#"><img class="search" src="img/icons/icons_search.png" alt="">Поиск</a></li>
+					<li class="dropdown"><a class="js-dropdown nav_link quest" href="#"><img class="search" src="img/icons/icons_search.png" alt="">Поиск</a>
+						<ul class="nav_link__dropdown search_block">
+							<li>
+								<form class="search_form">
+									<input type="search" name="q" placeholder=""> 
+									<input type="submit" value="Найти" class="btn btn_search">
+								</form>
+							</li>
+						</ul>
+					</li>
 					<li class="dropdown">
-						<a class=" js-dropdown nav_link per" href="#">
+						<a class="js-dropdown nav_link per" href="#">
 							<img class="person" src="img/icons/icons_person.png" alt="">Личный кабинет
 						</a>
 						<ul class="nav_link__dropdown">
@@ -111,8 +120,9 @@
 					<img src="img/product/prod1.jpg" alt="">
 				</div>
 				<div class="product_data">
-					<span class="sticker_novelty">Новинка</span>
+					<form action="">
 					<div class="prod_header">
+						<span class="sticker_novelty">Новинка</span>
 						<div class="subtitle">Тип 8а “Классик+”</div>
 						<a href="#" class="compare_add">Добавить в таблицу сравнения</a>
 					</div>
@@ -196,6 +206,22 @@
 							</div>
 						</div>
 					</div>
+					<div class="checkbox_block">
+						<div class="subtitle_block">Дополнительные опции</div>
+						<div class="checkbox_field">
+							<input id="dimension" type="checkbox" checked="">
+							<label for="dimension"><span class="checkbox"></span>3D-сетка</label>
+						</div>
+						<div class="checkbox_field">
+							<input id="removable " type="checkbox">
+							<label for="removable "><span class="checkbox"></span>Разъемный чехол</label>
+						</div>
+					</div>
+					<div class="add_to_card_block">
+						<span class="price">150 р.</span>
+						<a href="#" class="btn">В корзину</a>
+					</div>
+					</form>
 				</div>
 			</div>
 		</div>

@@ -65,6 +65,10 @@ $(document).ready(function () {
 		$(this).next('.nav_link__dropdown').slideToggle('visible');
 	});
 	
+	$('.js-dropdown').on('click', function(){
+		$(this).toggleClass('visible').next('.additional_options__content').slideToggle();
+	});
+	
 	// slider
 	
 	$('.main_slider').slick({
@@ -125,7 +129,6 @@ $('input#minTime').change(function(){
 	}
 	$('.js-sliderTime').slider("values",0,value1);	
 });
-
 	
 $('input#maxTime').change(function(){
 		
@@ -171,7 +174,6 @@ $('input#minPrice').change(function(){
 	}
 	$('.js-sliderPrice').slider("values",0,value1);	
 });
-
 	
 $('input#maxPrice').change(function(){
 		
@@ -217,7 +219,6 @@ $('input#minCost').change(function(){
 	}
 	$('.js-sliderCost').slider("values",0,value1);	
 });
-
 	
 $('input#maxCost').change(function(){
 		
@@ -263,7 +264,6 @@ $('input#minWeight').change(function(){
 	}
 	$('.js-sliderWeight').slider("values",0,value1);	
 });
-
 	
 $('input#maxWeight').change(function(){
 		
@@ -309,7 +309,6 @@ $('input#minHeight').change(function(){
 	}
 	$('.js-sliderHeight').slider("values",0,value1);	
 });
-
 	
 $('input#maxHeight').change(function(){
 		
@@ -324,7 +323,6 @@ $('input#maxHeight').change(function(){
 	}
 	$('.js-sliderWeight').slider("values",1,value2);
 });
-
 
 // фильтрация ввода в поля
 	$('.input_small').keypress(function(event){
@@ -341,11 +339,10 @@ $('input#maxHeight').change(function(){
 	
 	});
 	
-	
 	// height left_col
 	
-	var blockHeight = $('.left_col_wrap').height();
-	$('.left_col__inner').css('height',blockHeight - 88);
+//	var blockHeight = $('.left_col_wrap').height();
+//	$('.left_col__inner').css('height',blockHeight - 88);
 
 	// quantity
 
@@ -412,8 +409,8 @@ $('input#maxHeight').change(function(){
 	 $('.js-tooltip').mousemove(function (e) {
     var tooltip = $(this).next('.tooltip');
       $(tooltip).css({ 
-                        "top" : e.pageY-270,
-                        "left" : e.pageX-170
+                        "top" : e.pageY+5,
+                        "left" : e.pageX+5
                      })
                      .show();
 

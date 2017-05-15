@@ -55,9 +55,18 @@
 					<li><a class="nav_link" href="#">Контакты</a></li>
 				</ul>
 				<ul class="nav_right">
-					<li><a class="nav_link" href="#"><img class="search" src="img/icons/icons_search.png" alt="">Поиск</a></li>
+					<li class="dropdown"><a class="js-dropdown nav_link quest" href="#"><img class="search" src="img/icons/icons_search.png" alt="">Поиск</a>
+						<ul class="nav_link__dropdown search_block">
+							<li>
+								<form class="search_form">
+									<input type="search" name="q" placeholder=""> 
+									<input type="submit" value="Найти" class="btn btn_search">
+								</form>
+							</li>
+						</ul>
+					</li>
 					<li class="dropdown">
-						<a class=" js-dropdown nav_link per" href="#">
+						<a class="js-dropdown nav_link per" href="#">
 							<img class="person" src="img/icons/icons_person.png" alt="">Личный кабинет
 						</a>
 						<ul class="nav_link__dropdown">
@@ -219,8 +228,9 @@
 								<div class="slider_ui js-sliderWeight" id="slider"></div>
 						</div>
 						<hr>
-						<div class="additional_options"><span>Дополнительные опции</span></div>
-						<div class="criteria_block">
+						<div class="js-dropdown additional_options"><span>Дополнительные опции</span></div>
+						<div class="additional_options__content">
+							<div class="criteria_block">
 							<div class="subtitle_block">Высота</div>
 								<div class="form_mode">
 									<div class="field">
@@ -253,6 +263,7 @@
 								<input id="quality" type="checkbox" checked>
 								<label for="quality"><span class="checkbox"></span>Детский</label>
 							</div>
+						</div>
 						</div>
 				</div>
 			</div>

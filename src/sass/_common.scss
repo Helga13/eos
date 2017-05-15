@@ -71,6 +71,7 @@ input[type="text"]{
 input[type="checkbox"]{
 	position: absolute;
 	z-index: -1;
+	opacity: 0;
 }
 
 .star{
@@ -83,11 +84,6 @@ input[type="checkbox"]{
 .link{
 	color: #65bd26;
 	border-bottom: 1px solid #dff0d7;
-}
-
-.checkbox_block{
-	margin: 24px 0 12px;
-	padding: 0 10px;
 }
 
 .checkbox_block label{
@@ -158,6 +154,7 @@ input[type=checkbox]:checked+label .checkbox::after {
 	border-top-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	text-align: center;
+	border: none;
 }
 
 /* --- header --- */
@@ -353,6 +350,27 @@ input[type=checkbox]:checked+label .checkbox::after {
 		color: #000;
 		width: 100%;
 		padding: 0 20px;
+	}
+}
+
+.search_block{
+	width: 185px;
+	input[type="search"]{
+		border: 1px solid #65bd26;
+		@include font-size(1.2);
+		color: #000;
+		padding: 0 16px 0 6px;
+		height: 20px;
+		line-height: 20px;
+		width: 120px;
+	}
+	.btn_search{
+		height: 20px;
+		line-height: 20px;
+		font-family: 'CoreSansA35Light', $font-stack-helvetica;
+		@include font-size(1.2);
+		margin-left: -10px;
+		cursor: pointer;
 	}
 }
 
@@ -1058,6 +1076,13 @@ input[type=checkbox]:checked+label .checkbox::after {
 		padding: 10px 10px 16px;
 	}
 }
+.checkbox_block{
+	margin: 24px 0 12px;
+	padding: 0 10px;
+	.subtitle_block{
+		padding-left: 0;
+	}
+}
 
 .select_block{
 	width: 50%;
@@ -1352,20 +1377,32 @@ option,
 	text-align: center;
 	position: relative;
 	margin: 16px 0 10px;
+	cursor: pointer;
 	&:after{
 		content: '';
-		border-top: 6px solid #000;
+		border-top: 6px solid transparent;
 		border-right: 6px solid transparent;
 		border-bottom: 6px solid transparent;
-		border-left: 6px solid transparent;
+		border-left: 6px solid #000;
 		top: 7px;
 		right: 10px;
 		display: inline-block;
 		position: absolute;
+		transition: transform 0.3s ease, top 0.3s ease;
+	}
+	&.visible{
+		&:after{
+			transform: rotate(90deg);
+			top: 9px;
+		}
 	}
 	span{
 		border-bottom: 1px dashed #000;
 	}
+}
+
+.additional_options__content{
+	display: none;
 }
 
 .table_basket{
@@ -1610,14 +1647,14 @@ option,
 
 .product_data{
 	padding: 10px;
-	position: relative;
-	.sticker_novelty{
-		top: 10px;
-		left: 10px;
-	}
 	.prod_header{
 		text-align: center;
 		padding: 12px 60px;
+		position: relative;
+		.sticker_novelty{
+			top: 0;
+			left: 0;
+		}
 	}
 	.compare_add{
 		font-family: 'CoreSansA65Bold', $font-stack-helvetica;
@@ -1635,7 +1672,11 @@ option,
 		font-family: 'CoreSansA55Medium', $font-stack-helvetica;
 		@include font-size(1.4);
 		@include line-height(2.0);
-		padding: 10px;
+		padding: 10px 0;
+	}
+	.checkbox_field{
+		display: inline-block;
+		padding-right: 20px;
 	}
 	.content_item{
 		width: 170px;
@@ -1734,11 +1775,6 @@ option,
 	padding: 0 10px;
 	display: inline-block;
 	vertical-align: top;
-	
-	&.cover_tooltip{
-//		position: relative;
-	}
-//	overflow: hidden;
 	img{
 		width: 100%;
 		cursor: pointer;
@@ -1777,4 +1813,16 @@ option,
 		@include font-size(1.2);
 		@include line-height(1.5);
 	}
+}
+
+.add_to_card_block{
+	text-align: center;
+	padding: 10px 0;
+	.price{
+		font-family: 'CoreSansA65Bold', $font-stack-helvetica;
+		@include font-size(3.0);
+		@include line-height(4.0);
+		padding: 0 30px;
+	}
+	
 }
