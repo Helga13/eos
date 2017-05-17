@@ -1059,12 +1059,12 @@ input[type=checkbox]:checked+label .checkbox::after {
 		font-family: 'CoreSansA55Medium', $font-stack-helvetica;
 		padding: 6px 0;
 	}
-	
 }
 
 .left_col__inner{
 	background-color: #fff;
 	padding: 40px 10px 58px;
+	min-height: 976px;
 	.title{
 		font-family: 'CoreSansA65Bold', $font-stack-helvetica;
 		@include font-size(1.4);
@@ -1675,7 +1675,10 @@ option,
 		font-family: 'CoreSansA55Medium', $font-stack-helvetica;
 		@include font-size(1.4);
 		@include line-height(2.0);
-		padding: 10px 0;
+		padding: 10px;
+	}
+	.checkbox_block .subtitle_block{
+		padding-left: 0;
 	}
 	.checkbox_field{
 		display: inline-block;
@@ -2060,4 +2063,123 @@ option,
 .items_wrap{
 	padding: 0 40px;
 	margin-bottom: 50px;
+}
+
+#to_card_popup{
+	.popup_content{
+		width: 740px;
+		padding-bottom: 0;
+	}
+	.popup_row .img_block{
+		width: 220px;
+		height: auto;
+		float: left;
+		img{
+			width: 100%;
+		}
+	}
+	.text_block_wrap{
+		overflow: hidden;
+		padding-left: 20px;
+	}
+	.title{
+		margin: -4px 0 2px;
+	}
+	.title,
+	.key{
+		font-family: 'CoreSansA65Bold', $font-stack-helvetica;
+		@include font-size(1.4);
+		@include line-height(2.0);
+	}
+	.key,
+	.value{
+		display: inline-block;
+		vertical-align: top;
+		@include font-size(1.4);
+		@include line-height(2.4);
+	}
+	.key{
+		font-family: 'CoreSansA55Medium', $font-stack-helvetica;
+		width: 160px;
+		padding-right: 10px;
+	}
+	.select2.select2-container.select2-container--default{
+		width: 60px!important;
+	}
+	.select2-container .select2-selection--single{
+		height: 24px;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__rendered{
+		line-height: 24px;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__arrow b,
+	.select2-container{
+		margin-top: -4px;
+	}
+	.text_block_wrap .text_block{
+		float: left;
+	}
+	.price{
+		font-family: 'CoreSansA65Bold', $font-stack-helvetica;
+		@include font-size(3.0);
+		@include line-height(4.0);
+	}
+	.btn_popup_block{
+		overflow: hidden;
+		text-align: center;
+	}
+	.criteria_block{
+		margin: 14px -10px;
+	}
+}
+
+.popup_row{
+	text-align: left;
+	padding: 17px 0;
+}
+
+#to_card_popup .often_buy_block{
+	.item{
+		width: 33.333%;
+	}
+	li{
+		font-size: 0;
+	}
+	.data_item{
+		text-align: left;
+	}
+	.key{
+		width: 63.636%;
+		@include font-size(1.2);
+		@include line-height(2.0);
+	}
+	.value{
+		width: 36.364%;
+		@include line-height(2.0);
+	}
+	.select2-container .select2-selection--single{
+		height: 20px;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__rendered{
+		line-height: 20px;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__arrow b{
+		margin-top: -6px;
+	}
+	.price{
+		@include font-size(2.0);
+		@include line-height(3.0);
+		margin: 8px 0 12px;
+	}
+	.title{
+		@include font-size(2.0);
+		@include line-height(3.0);
+		padding: 4px;
+	}
+}
+
+.often_buy_block{
+	background-color: #f3f2f2;
+	margin: 0 -20px;
+	padding: 16px 10px 30px 10px;
 }
