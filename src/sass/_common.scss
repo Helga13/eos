@@ -777,6 +777,8 @@ input[type=checkbox]:checked+label .checkbox::after {
 	}
 	.item_wrap{
 		height: 100%;
+		display: inline-block;
+		background-color: #fff;
 	}
 	.img_block{
 		display: inline-block;
@@ -1636,6 +1638,7 @@ option,
 	margin: 20px 0;
 	background-color: #fff;
 	@include clearfix;
+	min-height: 600px;
 }
 
 .product_data,
@@ -1742,6 +1745,7 @@ option,
 	overflow: hidden;
 	float: right;
 	position: relative;
+	min-height: 600px;
 	.rate{
 		position: absolute;
 		top: 10px;
@@ -1766,7 +1770,9 @@ option,
 		}
 	}
 	img{
-		width: 100%;
+//		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 }
 
@@ -1824,5 +1830,234 @@ option,
 		@include line-height(4.0);
 		padding: 0 30px;
 	}
+}
+
+.tabs_block.feature{
+	margin: 40px 0;
+}
+
+.tabs_block.feature .tabs_content{
+	padding: 16px 10px;
+}
+
+.feature_item.first{
+	padding-right: 20px;
+}
+
+.feature_item.last{
+	padding-left: 20px;
+}
+
+.feature_item{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 10px;
+	.subtitle_block{
+		font-family: 'CoreSansA55Medium', $font-stack-helvetica;
+		@include font-size(1.4);
+		@include line-height(2.0);
+	}
+	.simple_text{
+		font-family: 'CoreSansA35Light', $font-stack-helvetica;
+		@include font-size(1.4);
+		@include line-height(2.0);
+		color: #555;
+		span{
+			color: #000;
+		}
+	}
+	.img_block{
+		height: auto;
+		li{
+			width: 30px;
+			margin: 14px 18px 0 0;
+			display: inline-block;
+			opacity: 0.7;
+		}
+		img{
+			width: 100%;
+		}
+	}
+	.list{
+		li{
+			display: inline-block;
+			vertical-align: top;
+			padding-left: 20px;
+			position: relative;
+			margin: 4px 0;
+		}
+		.num{
+			color: #65bd26;
+			position: absolute;
+			left: 0;
+		}
+	}
+	.rate{
+		.empty,
+		.full{
+			width: 40px;
+			height: 10px;
+			background-color: #fff;
+			display: inline-block;
+			margin-right: 10px;
+			border: 1px solid #65bd26;
+		}
+		.full{
+			background-color: #65bd26;
+		}
+		.text{
+			display: inline-block;
+		}
+	}
+}
+
+.review{
+	font-family: 'CoreSansA35Light', $font-stack-helvetica;
+	color: #555;
+	@include font-size(1.4);
+	@include line-height(2.0);
+}
+
+.review__name{
+	display: inline-block;
+	font-family: 'CoreSansA55Medium', $font-stack-helvetica;
+}
+
+.review__date{
+	display: inline-block;
+}
+
+.review__grade{
+	color: #000;
+	float: right;
+}
+
+.review_text{
+	margin: 5px 0;
+}
+
+.leave_feedback{
+	text-align: right;
+	margin: 4px 0 38px;
+	.feedback{
+		color: #65bd26;
+	}
+}
+
+.reply{
+	text-align: right;
+	.scroll_wrap{
+		padding: 10px 5px;
+		border: 1px solid #efefef;
+		line-height: 0;
+		height: 122px;
+	}
+	textarea{
+		width: 100%;
+		border-color: transparent;
+		padding: 0 15px;
+		height: 100%;
+		color: #555;
+		position: relative;
+	}
+}
+
+.reply_toggle{
+	display: none;
+}
+
+/* custom scroll */
+#ascrail2000,
+#ascrail2001{
+	border: 1px solid #65bd26;
+}
+/* end */
+
+.reply_btn{
+	font-family: 'CoreSansA35Light', $font-stack-helvetica;
+	@include font-size(1.4);
+	@include line-height(3.0);
+   height: 30px;
+   display: inline-block;
+   width: 220px;
+   color: #65bd26;
+   border: 1px solid #65bd26;
+   border-radius: 16px;
+   text-align: center;
+   margin: 10px auto;
+}
+
+.show_more_block{
+	text-align: center;
+	padding: 12px 0 8px;
+	.show_more{
+		color: #65bd26;
+		padding: 10px 0;
+	}
+}
+
+.feature_item__title{
+	font-family: 'CoreSansA65Bold', $font-stack-helvetica;
+	@include font-size(1.4);
+	@include line-height(2.0);
+	text-align: center;
+}
+
+.feature_item{
+	.simple_text,
+	.prod_rate{
+		@include font-size(1.4);
+		color: #000;
+	}
+	.prod_rate{
+		@include line-height(2.0);
+		font-family: 'CoreSansA35Light', $font-stack-helvetica;
+		margin: 4px 0;
+		position: relative;
+		display: inline-block;
+	}
 	
+	.shop_rate{
+		display: inline-block;
+    position: relative;
+		top: 5px;
+	}
+}
+
+.shop_rate label {
+	display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #fff;
+	border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  float: right;
+  box-shadow: inset 0 0 0 1px #65bd26;
+}
+
+.shop_rate input:checked~label, 
+.shop_rate label:hover, 
+.shop_rate label:hover~label {
+    background-color: #65bd26;
+    transition: background-color .3s ease;
+}
+
+.shop_rate input {
+    opacity: 0;
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.reply .scroll_wrap.review_mod{
+	height: 222px;
+}
+
+.items_wrap{
+	padding: 0 40px;
+	margin-bottom: 50px;
 }

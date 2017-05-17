@@ -118,11 +118,183 @@
 					</div>
 					<div class="add_to_card_block">
 						<span class="price">150 р.</span>
-						<a href="#" class="btn">В корзину</a>
+						<a href="#" class="js-btn_popup btn to_card" data-id="to_card_popup">В корзину</a>
+					</div>
+					<div class="overlay popup" id="to_card_popup">
+						<section class="popup_content">
+						<a href="#" class="popup_close"><img src="img/icons/icons_plus.png" alt=""></a>
+							
+							
+							
+						</section>
 					</div>
 					</form>
 				</div>
 			</div>
+		</div>
+		<div class="row wrap">
+			<div class="tabs_block feature main_tabs">
+				<ul class="tabs_caption">
+					<li class="tab active">Характеристики</li>
+					<li class="tab">Отзывы покупателей</li>
+				</ul>
+				<div class="tabs_content active">
+					<div class="feature_item first">
+						<div class="criteria_block">
+							<div class="subtitle_block">Рейтинг: 4,7</div>
+							<p class="simple_text">Наиболее жесткая модель матраса благодаря наличию высокой и прочной кокосовой плиты. Имеет способность выдерживать большие нагрузки.</p>
+						</div>
+						<div class="criteria_block">
+							<div class="subtitle_block">Основные параметры</div>
+							<div class="simple_text"><span>Высота матраса: </span>20 см</div>
+							<div class="simple_text"><span>Нагрузка на одно спальное место: </span>до 120 кг</div>
+							<div class="simple_text"><span>Основные свойства:</span> 
+								<ul class="img_block">
+									<li><img src="img/icons/prop3.png" alt=""></li>
+									<li><img src="img/icons/prop2.png" alt=""></li>
+									<li><img src="img/icons/prop1.png" alt=""></li>
+								</ul>
+							</div>
+						</div>
+						<div class="criteria_block">
+							<div class="subtitle_block">Жесткость матраса</div>
+							<p class="simple_text">Верхняя сторона:</p>
+							<ul class="rate">
+								<li class="full"></li>
+								<li class="full"></li>
+								<li class="full"></li>
+								<li class="empty"></li>
+								<li class="text">оптимальная жесткость</li>
+							</ul>
+							<p class="simple_text">Нижняя сторона:</p>
+							<ul class="rate">
+								<li class="full"></li>
+								<li class="full"></li>
+								<li class="empty"></li>
+								<li class="empty"></li>
+								<li class="text">средняя жесткость</li>
+							</ul>
+						</div>
+					</div>
+					<div class="feature_item last">
+						<ul class="list">
+						<li><span class="num">1</span>Чехол стеганый Джерси или Джерси Люкс.</li>
+						<li><span class="num">2</span>Хлопковое полотно. Прекрасный натуральный материал, обеспечивает необходимый здоровый микроклимат во время сна. Защищает чехол от трения с жесткими настилами.</li>
+						<li><span class="num">3</span>Кокосовая плита. Натуральный наполнитель из спрессованных кокосовых волокон, скрепленных пропиткой на основе натурального латекса. Придает жесткость матрасу и делает его более упругим.
+Спанбонд. Защищает настилы от трения о пружинный блок.</li>
+						<li><span class="num">4</span>Блок независимых пружин TFK 272 пр/м2. Каждая пружина помещена</li>
+						<li><span class="num">5</span>в отдельный кармашек. Благодаря этой технологии достигается правильное распределение нагрузки и высокая точечная эластичность.</li>
+						<li><span class="num">6</span>Еврокаркас из пенополиуретана. Удерживает пружинный блок и придает четкую форму матрасу.</li>
+					</ul>
+					</div>
+				</div>
+				<div class="tabs_content">
+					<div class="feature_item first">
+						<div class="review">
+							<div class="review_row">
+								<div class="review__name">Елена</div>
+								<div class="review__date"><time datetime="2017-04-20">20.04.2017</time></div>
+								<div class="review__grade">Оценка: 5</div>
+							</div>
+							<div class="review_row">
+								<div class="review_text">Не знаю даже как и описать, может быть так... возникает ощущение, что паришь на облаке... матрас очень мягкий к прикосновению и в тоже время с отличной поддержкой (ничего не проседает и не продавливается).</div>
+							</div>
+							<div class="leave_feedback">
+								<a href="#" class="js-feedback feedback">Написать ответ</a>
+							</div>
+							<div class="reply reply_toggle">
+								<div class="scroll_wrap"><textarea name="" class="js-scroll"></textarea></div>
+								<a href="#" class="reply_btn">Оставить ответ</a>
+							</div>
+							<div class="show_more_block">
+								<a href="#" class="show_more">Показать остальные отзывы (5)</a>
+							</div>
+						</div>
+					</div>
+					<div class="feature_item last testimonial">
+						<div class="feature_item__title">Оставьте свой отзыв</div>
+						<div class="simple_text">Ваше мнение очень важно для нас, поскольку поможет стать лучше.</div>
+						<div class="prod_rate">
+							<span>Оценка: </span>
+							<div class="shop_rate" id="shop_rate">
+                  <div>
+                    <input id="shop_rate-4" type="radio" name="shop_rate">
+                    <label for="shop_rate-4"></label>
+                    <input id="shop_rate-3" type="radio" name="shop_rate">
+                    <label for="shop_rate-3"></label>
+                    <input id="shop_rate-2" type="radio" name="shop_rate">
+                    <label for="shop_rate-2"></label>
+                    <input id="shop_rate-1" type="radio" name="shop_rate">
+                    <label for="shop_rate-1"></label>
+                    <input id="shop_rate-0" type="radio" name="shop_rate">
+                    <label for="shop_rate-0"></label>
+                  </div>
+                </div>
+						</div>
+						<div class="reply">
+								<div class="scroll_wrap review_mod"><textarea name="" class="js-scroll"></textarea></div>
+								<a href="#" class="reply_btn">Оставить отзыв</a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row wrap">
+			<div class="title_block"><span class="title_block__inner">Похожие товары</span></div>
+			<div class="items_wrap main_tabs">
+						<div class="item item_new">
+							<a href="#" class="item_wrap">
+								<div class="img_block">
+								<span class="sticker_novelty">Новинка</span>
+									<img src="img/item_prod/img1.jpg" alt="">
+								</div>
+								<div class="text_block">
+									<div class="item_title">Тип 3 "Элит"</div>
+									<div class="text">Наиболее жесткая модель матраса благодаря наличию высокой и прочной кокосовой плиты. </div>
+									<ul class="list">
+										<li><span class="key">Высота матраса: </span>20 см</li>
+										<li><span class="key">Нагрузка на одно спальное место: </span>до 120 кг</li>
+										<li>
+											<span class="key">Основные свойства: </span>
+											<ul class="icons">
+												<li><img src="img/icons/prop1.png" alt=""></li>
+												<li><img src="img/icons/prop2.png" alt=""></li>
+												<li><img src="img/icons/prop3.png" alt=""></li>
+											</ul>
+										</li>
+									</ul>
+									<div class="price">от 150 р.</div>
+									<span class="btn">Подробнее</span>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#" class="item_wrap">
+								<div class="img_block">
+									<img src="img/item_prod/img2.jpg" alt="">
+								</div>
+								<div class="text_block">
+									<div class="item_title">Тип 3 "Элит"</div>
+									<div class="text">Наиболее жесткая модель матраса благодаря наличию высокой и прочной кокосовой плиты. </div>
+									<div class="price">от 150 р.</div>
+									<span class="btn">Подробнее</span>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#" class="item_wrap">
+								<div class="img_block">
+									<img src="img/item_prod/img2.jpg" alt="">
+								</div>
+								<div class="text_block">
+									<div class="item_title">Тип 3 "Элит"</div>
+									<div class="text">Наиболее жесткая модель матраса благодаря наличию высокой и прочной кокосовой плиты. </div>
+									<div class="price">от 150 р.</div>
+									<span class="btn">Подробнее</span>
+								</div>
+							</a>
+						</div>
+					</div>
 		</div>
 	</div>
 	//= includes/footer.html

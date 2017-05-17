@@ -377,6 +377,22 @@ $('input#maxHeight').change(function(){
                     });
     });
 	
+	// scrollbar
+	
+	$('.js-scroll').niceScroll({
+		cursorcolor: '#65bd26',
+		cursorborder: '1px solid #65bd26',
+		cursoropacitymin: '1',
+		cursorborderradius: '0px',
+		cursorwidth: '8px'
+	});
+	
+	// feedback
+	
+	$('.js-feedback').on('click', function(e){
+		e.preventDefault();
+		$(this).parent().next('.reply_toggle').slideToggle(500);
+	});
 	
 });
 
