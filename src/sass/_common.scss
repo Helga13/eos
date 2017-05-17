@@ -2183,3 +2183,18 @@ option,
 	margin: 0 -20px;
 	padding: 16px 10px 30px 10px;
 }
+
+.slider_items{
+	.item{
+		width: 240px;
+	}
+	.item.item_new{
+		width: 480px;
+	}
+	.slick-prev{
+		left: 10px;
+	}
+	.slick-next{
+		right: 10px;
+	}
+}

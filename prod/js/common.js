@@ -181,6 +181,15 @@ $(document).ready(function () {
 		var slickTrackHeight = $(slickTrack).height();
 		$(this).find('.slick-slide').css('height', slickTrackHeight + 'px');
 	});
+	// slider product
+	$('.slider_items').slick({
+			variableWidth: true
+		, infinite: true
+//		, autoplay: true
+//		, autoplaySpeed: 2000
+		, slidesToShow: 3
+		, slidesToScroll: 1
+	});
 	// select
 	$('.js-select').select2({
 		minimumResultsForSearch: Infinity
