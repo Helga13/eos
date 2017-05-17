@@ -2198,3 +2198,15 @@ option,
 		right: 10px;
 	}
 }
+
+.mattress_field{
+	position: relative;
+	text-align: left;
+	label{
+		width: 100%;
+		font-size: 0;
+	}
+	input[name="mattress"]{
+		position: absolute;
+	}
+}

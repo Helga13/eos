@@ -147,7 +147,7 @@ if (document.getElementById('map')) {
 
 	function setMarkers(map) {
 		var image = {
-			url: '../../img/icons/marker.png'
+			url: 'img/icons/marker.png'
 			, size: new google.maps.Size(24, 35)
 			, origin: new google.maps.Point(0, 0)
 			, anchor: new google.maps.Point(12, 35)
