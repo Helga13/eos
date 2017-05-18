@@ -382,7 +382,7 @@ $(document).ready(function () {
 			value2 = value1;
 			$('input#maxHeight').val(value2);
 		}
-		$('.js-sliderWeight').slider("values", 1, value2);
+		$('.js-sliderHeight').slider("values", 1, value2);
 	});
 	// фильтрация ввода в поля
 	$('.input_small').keypress(function (event) {
