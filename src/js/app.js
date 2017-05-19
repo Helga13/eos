@@ -41,10 +41,8 @@ $(document).ready(function () {
 	$('.slider_items').slick({
 			variableWidth: true
 		, infinite: true
-//		, autoplay: true
-//		, autoplaySpeed: 2000
 		, slidesToShow: 3
-		, slidesToScroll: 1
+		, slidesToScroll: 3
 	});
 	// select
 	$('.js-select').select2({
