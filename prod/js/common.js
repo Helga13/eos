@@ -150,8 +150,7 @@ $(document).ready(function () {
 	$('.tabs_block').each(function () {
 		$(this).find('.tab').each(function (i) {
 			$(this).on('click', function (e) {
-				e.preventDefault();
-				$(this).addClass('active').siblings().removeClass('active').closest('.tabs_block').find('.tabs_content').removeClass('active').eq(i).addClass('active')
+				e.preventDefault();	$(this).addClass('active').siblings().removeClass('active').closest('.tabs_block').find('.tabs_content').removeClass('active').eq(i).addClass('active')
 			});
 		});
 	});
@@ -474,6 +473,12 @@ $(document).ready(function () {
 	$('.js-feedback').on('click', function (e) {
 		e.preventDefault();
 		$(this).parent().next('.reply_toggle').slideToggle(500);
+	});
+	// choice cover
+	$('.mattress_popup > .mattress_field > label').on('click', function(i){
+		var radio = $(this).parent().find('input').val();
+//        console.log( radio );
+		$('.cover_main_block > [data-radio="'+radio+'"]').addClass('visible').siblings().removeClass('visible');
 	});
 });
 // sticky

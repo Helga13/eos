@@ -1800,6 +1800,15 @@ option,
 	}
 }
 
+.cover_main_block{
+	.cover_item{
+		display: none;
+		&.visible{
+			display: block;
+		}
+	}
+}
+
 .cover_block{
 	width: 50%;
 	padding: 0 10px;
@@ -2222,15 +2231,33 @@ option,
 	}
 }
 
+.mattress_popup{
+	margin: 10px 0;
+}
+
 .mattress_field{
 	position: relative;
 	text-align: left;
 	label{
 		width: 100%;
 		font-size: 0;
+		line-height: 0;
+		border: 1px solid transparent;
+    padding: 10px 0;
+    margin: 5px 0;
+		cursor: pointer;
+		transition: border-color 0.3s ease;
 	}
 	input[name="mattress"]{
 		position: absolute;
+		z-index: -1;
+		opacity: 0;
+		visibility: hidden;
+	}
+	input[name="mattress"]:checked~label, 
+	label:hover, 
+	label:hover~label{
+		border-color: #65bd26;
 	}
 }
 
