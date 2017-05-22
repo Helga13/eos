@@ -76,17 +76,39 @@ $icons_bin-total-width: 622px
 $icons_bin-total-height: 450px
 $icons_bin-image: 'sprite.png'
 $icons_bin: 522px 100px -522px -100px 75px 82px 622px 450px 'sprite.png' 'icons_bin'
+$icons_cart-white-name: 'icons_cart-white'
+$icons_cart-white-x: 522px
+$icons_cart-white-y: 362px
+$icons_cart-white-offset-x: -522px
+$icons_cart-white-offset-y: -362px
+$icons_cart-white-width: 60px
+$icons_cart-white-height: 60px
+$icons_cart-white-total-width: 622px
+$icons_cart-white-total-height: 450px
+$icons_cart-white-image: 'sprite.png'
+$icons_cart-white: 522px 362px -522px -362px 60px 60px 622px 450px 'sprite.png' 'icons_cart-white'
 $icons_cart-name: 'icons_cart'
 $icons_cart-x: 522px
-$icons_cart-y: 242px
+$icons_cart-y: 302px
 $icons_cart-offset-x: -522px
-$icons_cart-offset-y: -242px
+$icons_cart-offset-y: -302px
 $icons_cart-width: 60px
 $icons_cart-height: 60px
 $icons_cart-total-width: 622px
 $icons_cart-total-height: 450px
 $icons_cart-image: 'sprite.png'
-$icons_cart: 522px 242px -522px -242px 60px 60px 622px 450px 'sprite.png' 'icons_cart'
+$icons_cart: 522px 302px -522px -302px 60px 60px 622px 450px 'sprite.png' 'icons_cart'
+$icons_comparison-white-name: 'icons_comparison-white'
+$icons_comparison-white-x: 522px
+$icons_comparison-white-y: 242px
+$icons_comparison-white-offset-x: -522px
+$icons_comparison-white-offset-y: -242px
+$icons_comparison-white-width: 60px
+$icons_comparison-white-height: 60px
+$icons_comparison-white-total-width: 622px
+$icons_comparison-white-total-height: 450px
+$icons_comparison-white-image: 'sprite.png'
+$icons_comparison-white: 522px 242px -522px -242px 60px 60px 622px 450px 'sprite.png' 'icons_comparison-white'
 $icons_comparison-name: 'icons_comparison'
 $icons_comparison-x: 522px
 $icons_comparison-y: 182px
@@ -99,16 +121,16 @@ $icons_comparison-total-height: 450px
 $icons_comparison-image: 'sprite.png'
 $icons_comparison: 522px 182px -522px -182px 60px 60px 622px 450px 'sprite.png' 'icons_comparison'
 $icons_minus-name: 'icons_minus'
-$icons_minus-x: 570px
-$icons_minus-y: 302px
-$icons_minus-offset-x: -570px
-$icons_minus-offset-y: -302px
+$icons_minus-x: 348px
+$icons_minus-y: 276px
+$icons_minus-offset-x: -348px
+$icons_minus-offset-y: -276px
 $icons_minus-width: 44px
 $icons_minus-height: 44px
 $icons_minus-total-width: 622px
 $icons_minus-total-height: 450px
 $icons_minus-image: 'sprite.png'
-$icons_minus: 570px 302px -570px -302px 44px 44px 622px 450px 'sprite.png' 'icons_minus'
+$icons_minus: 348px 276px -348px -276px 44px 44px 622px 450px 'sprite.png' 'icons_minus'
 $icons_person-name: 'icons_person'
 $icons_person-x: 582px
 $icons_person-y: 182px
@@ -121,27 +143,27 @@ $icons_person-total-height: 450px
 $icons_person-image: 'sprite.png'
 $icons_person: 582px 182px -582px -182px 36px 44px 622px 450px 'sprite.png' 'icons_person'
 $icons_plus-name: 'icons_plus'
-$icons_plus-x: 522px
-$icons_plus-y: 346px
-$icons_plus-offset-x: -522px
-$icons_plus-offset-y: -346px
+$icons_plus-x: 450px
+$icons_plus-y: 218px
+$icons_plus-offset-x: -450px
+$icons_plus-offset-y: -218px
 $icons_plus-width: 44px
 $icons_plus-height: 44px
 $icons_plus-total-width: 622px
 $icons_plus-total-height: 450px
 $icons_plus-image: 'sprite.png'
-$icons_plus: 522px 346px -522px -346px 44px 44px 622px 450px 'sprite.png' 'icons_plus'
+$icons_plus: 450px 218px -450px -218px 44px 44px 622px 450px 'sprite.png' 'icons_plus'
 $icons_search-name: 'icons_search'
-$icons_search-x: 522px
-$icons_search-y: 302px
-$icons_search-offset-x: -522px
-$icons_search-offset-y: -302px
+$icons_search-x: 450px
+$icons_search-y: 174px
+$icons_search-offset-x: -450px
+$icons_search-offset-y: -174px
 $icons_search-width: 48px
 $icons_search-height: 44px
 $icons_search-total-width: 622px
 $icons_search-total-height: 450px
 $icons_search-image: 'sprite.png'
-$icons_search: 522px 302px -522px -302px 48px 44px 622px 450px 'sprite.png' 'icons_search'
+$icons_search: 450px 174px -450px -174px 48px 44px 622px 450px 'sprite.png' 'icons_search'
 $icons_to_left_arrow-green-name: 'icons_to_left_arrow-green'
 $icons_to_left_arrow-green-x: 348px
 $icons_to_left_arrow-green-y: 0px
@@ -244,7 +266,7 @@ $vk: 406px 348px -406px -348px 100px 100px 622px 450px 'sprite.png' 'vk'
 $spritesheet-width: 622px
 $spritesheet-height: 450px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $advantages_bw-06 $advantages_bw-07 $advantages_bw-08 $advantages_bw-09 $checkbox $icons_bin $icons_cart $icons_comparison $icons_minus $icons_person $icons_plus $icons_search $icons_to_left_arrow-green $icons_to_right_arrow-green $insta $marker $prop1 $prop2 $prop3 $skype $vk
+$spritesheet-sprites: $advantages_bw-06 $advantages_bw-07 $advantages_bw-08 $advantages_bw-09 $checkbox $icons_bin $icons_cart-white $icons_cart $icons_comparison-white $icons_comparison $icons_minus $icons_person $icons_plus $icons_search $icons_to_left_arrow-green $icons_to_right_arrow-green $insta $marker $prop1 $prop2 $prop3 $skype $vk
 $spritesheet: 622px 450px 'sprite.png' $spritesheet-sprites
 
 /*

@@ -11,13 +11,14 @@
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 	</head>
 	<body>
+	<div class="overlay_nav"></div>
 	<header>
 		<div class="header_top">
 			<div class="wrap wrap_mod">
 				<div class="logo">
 					<a href="#">
 						<img class="logo_img" src="img/logo.png" alt="">
-						<p class="logo_text">Пробуждение новых чувств</p>
+	<!--					<p class="logo_text">Пробуждение новых чувств</p>-->
 					</a>
 				</div>
 				<div class="tabs_block header_phone">
@@ -45,9 +46,29 @@
 				</div>
 			</div>
 		</div>
-		<nav class="nav_top">
+	</header>
+	<div class="menu_wrap">
+		<div class="nav_btn">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</div>
+		<div class="media_logo"><a href="#"><img src="img/logo_media.png" alt=""></a></div>
+		<div class="media_card">
+			<a href="#"><img src="img/icons/icons_cart-white.png" alt=""><span>2</span></a>
+			<a href="#"><img src="img/icons/icons_comparison-white.png" alt=""><span>3</span></a>
+		</div>
+		<div class="toggle_wrap">
+			<div class="media_close">
+					<a href="#">
+						<span class="icon_close first"></span>
+						<span class="icon_close last"></span>
+					</a>
+				</div>
+				<nav class="nav_top">
 			<div class="wrap">
 				<ul class="nav_left">
+					<li class="header">Каталог</li>
 					<li><a class="nav_link" href="#">О компании</a></li>
 					<li><a class="nav_link" href="#">Где купить</a></li>
 					<li><a class="nav_link" href="#">Доставка и оплата</a></li>
@@ -77,36 +98,44 @@
 				</ul>
 			</div>
 		</nav>
-	</header>
-	<ul class="sidebar_left" id="fixblock">
-		<li><a class="nav_link" href="#"><img src="img/sidebar_left/category_rectangular_matras.png" alt="">Матрасы</a></li>
-		<li><a class="nav_link" href="#"><img src="img/sidebar_left/category_rectangular_ltopper.png" alt="">Топперы</a></li>
-		<li><a class="nav_link" href="#"><img src="img/sidebar_left/category_round_namatrasnik.png" alt="">Наматрасники</a></li>
-		<li><a class="nav_link" href="#"><img src="img/sidebar_left/category_round_podushka.png" alt="">Подушки</a></li>
-		<li><a class="nav_link" href="#"><img src="img/sidebar_left/category_round_osnovanie.png" alt="">Основания</a></li>
-	</ul>
-	<ul class="sidebar_right" id="fixblock1">
-		<li>
-			<a class="nav_link" href="#">
-				<span class="icon">2</span>
-				<img src="img/icons/icons_cart.png" alt="">
-				<p>Корзина</p>
-			</a>
-		</li>
-		<li>
-			<a class="nav_link" href="#">
-				<span class="icon">3</span>
-				<img src="img/icons/icons_comparison.png" alt="">
-				<p>Сравнение</p>
-			</a>
-		</li>
-		<li>
-			<a class="nav_link percent" href="#">
-				<p class="percentage">%</p>
-				Акции
-			</a>
-		</li>
-	</ul>
+		<ul class="sidebar_left" id="fixblock">
+			<li class="media_search">
+			<form class="search_form">
+				<input type="search" name="q" placeholder=""> 
+				<input type="submit" value="Найти" class="btn btn_search">
+			</form>
+			</li>
+			<li class="header">Каталог</li>
+			<li><a class="nav_link" href="#"><img src="img/sidebar_left/category_rectangular_matras.png" alt="">Матрасы</a></li>
+			<li><a class="nav_link" href="#"><img src="img/sidebar_left/category_rectangular_ltopper.png" alt="">Топперы</a></li>
+			<li><a class="nav_link" href="#"><img src="img/sidebar_left/category_round_namatrasnik.png" alt="">Наматрасники</a></li>
+			<li><a class="nav_link" href="#"><img src="img/sidebar_left/category_round_podushka.png" alt="">Подушки</a></li>
+			<li><a class="nav_link" href="#"><img src="img/sidebar_left/category_round_osnovanie.png" alt="">Основания</a></li>
+		</ul>
+		<ul class="sidebar_right" id="fixblock1">
+			<li>
+				<a class="nav_link" href="#">
+					<span class="icon">2</span>
+					<img src="img/icons/icons_cart.png" alt="">
+					<p>Корзина</p>
+				</a>
+			</li>
+			<li>
+				<a class="nav_link" href="#">
+					<span class="icon">3</span>
+					<img src="img/icons/icons_comparison.png" alt="">
+					<p>Сравнение</p>
+				</a>
+			</li>
+			<li>
+				<a class="nav_link percent" href="#">
+					<p class="percentage">%</p>
+					Акции
+				</a>
+			</li>
+		</ul>
+		</div>
+	</div>
 	<div class="main_content">
 		<div class="row wrap">
 			<div class="title_block_wrap">
@@ -265,7 +294,7 @@
 				<div class="logo footer_logo">
 					<a href="#">
 						<img class="logo_img" src="img/logo_footer.png" alt="">
-						<p class="logo_text">Пробуждение новых чувств</p>
+	<!--					<p class="logo_text">Пробуждение новых чувств</p>-->
 					</a>
 				</div>
 				<div class="contacts">
@@ -302,7 +331,7 @@
 					<li><img src="img/payment/pay.png" alt=""></li>
 				</ul>
 				<div class="address">
-					<p>225040, Республика Беларусь, Брестский район, п. Сосновка, ул. Сосновая 10</p>
+					<p>225040, Республика Беларусь, Брестский район, п. Сосновка, ул. Сосновая10</p>
 					<p>В торговом реестре с 23 июня 2010г. УНП 190806803. Регистрация №190806803, 22.02.2007, Мингорисполком.</p>
 				</div>
 			</div>
