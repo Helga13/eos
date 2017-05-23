@@ -522,6 +522,60 @@
 	.advantage .img_block{
 		display: none;
 	}
+	.table .header{
+		display: none;
+	}
+	.table_cell.num,
+	.table_cell.photo,
+	.table_cell.name,
+	.table_cell.col,
+	.table_cell.quant,
+	.table_cell.price,
+	.table_cell.del{
+		display: block;
+		width: 100%;
+		border-left: 1px solid #bbb;
+		text-align: left;
+    padding-left: 50%;
+    position: relative;
+		&:after{
+			content: "";
+			display: block;
+			border-left: 1px solid #bbb;
+			position: absolute;
+			left: 47%;
+			top: 0;
+			height: 100%;
+		}
+		&:before{
+			content: attr(data-title);
+			position: absolute;
+			left: 20px;
+			width: 45%;
+			font-size: 14px;
+			display: inline-block;
+			color: #000;
+			font-weight: normal;
+			line-height: 20px;
+		}
+		.quantity{
+			text-align: left;
+		}
+	}
+	.table_cell.num{
+		border-top: 1px solid #bbb;
+	}
+	.body .table_cell.del{
+		border-right: 1px solid #bbb;
+	}
+	.save_basket{
+		width: 100%;
+		float: none;
+	}
+	.caption_block{
+		width: 100%;
+		padding-bottom: 10px;
+	}
 }
 
 @media only screen and (max-width : 480px) {
@@ -535,6 +589,67 @@
 	.footer_top .contacts{
 		width: 100%;
 		padding-bottom: 20px;
+	}
+	.main_tabs .item {
+    width: 100%;
+		height: auto;
+		.text_block{
+			height: auto;
+		}
+	}
+	.main_tabs .item.item_new{
+		height: auto;
+		.img_block{
+			width: 100%;
+			height: 120px;
+		}
+		.text_block{
+			width: 100%;
+			height: auto;
+			border-left: 1px solid #eee;
+		}
+	}
+	.left_col .left_col__inner{
+		width: 300px;
+	}
+	.main_tabs.goods .item{
+		width: 100%;
+	}
+	.product_data .content_item__issue{
+		width: 100%;
+		padding: 6px 0;
+	}
+	.cover_block{
+		width: 100%;
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+	.slider_items .item{
+		width: 320px;
+		min-height: 434px;
+		.text_block{
+			min-height: 309px;
+		}
+	}
+	.slider_items .item.item_new{
+		width: 320px;
+	}
+	.main_tabs .tab{
+		@include font-size(1.4);
+		@include line-height(3.6);
+		padding: 0 12px;
+	}
+	.main_tabs .tab:not(:last-child) {
+    padding-right: 28px;
+	}
+	.slider_items.items_wrap{
+		padding: 0 26px;
+		.slick-prev{
+			left: -2px;
+		}
+		.slick-next{
+			right: -2px;
+		}
 	}
 }
 

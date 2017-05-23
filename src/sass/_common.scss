@@ -1664,6 +1664,7 @@ option,
 }
 
 .save_basket{
+	float: left;
 	@include font-size(1.4);
 	@include line-height(2.0);
 	color: #65bd26;
