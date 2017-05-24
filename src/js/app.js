@@ -379,7 +379,6 @@ $(document).ready(function () {
 		$('.overlay_nav').removeClass('visible').parent().css({'overflow': 'auto'});
 		$('.toggle_wrap').removeClass('visible');
 	});
-	
 });
 // sticky
 (function () {

@@ -1686,6 +1686,9 @@ option,
 	text-align: left;
 	display: inline-block;
 	vertical-align: top;
+	&.login_item{
+		float: right;
+	}
 	.item_subtitle{
 		font-family: 'CoreSansA55Medium', $font-stack-helvetica;
 		@include font-size(1.4);
@@ -1750,6 +1753,8 @@ option,
 	text-align: center;
 	float: right;
 	margin: -10px 17px 0;
+	background-color: transparent;
+	cursor: pointer;
 }
 
 .btn_block{

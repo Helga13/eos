@@ -222,49 +222,51 @@
 				</div>
 				<a href="#" class="save_basket">Сохранить корзину</a>
 					<div class="form_block_ordering">
-						<form action="">
 							<div class="subtitle">Оформление заказа</div>
+							<div class="order_item login_item">
+							<form action="" class="login">
+								<a href="#" class="js-reg registered">Уже зарегистрированы?</a>
+								<div class="registered_block">
+									<div class="field">
+										<label for="">Логин</label>
+										<input type="text" required>
+										<span class="star">*</span>
+									</div>
+									<div class="field">
+										<label for="">Пароль</label>
+										<input type="text" required>
+										<span class="star">*</span>
+									</div>
+									<button type="submit" class="btn_enter">Войти</button>
+								</div>
+								</form>
+							</div>
+							<form action="" class="fast_order">
 							<div class="order_item">
 								<div class="item_subtitle">Параметры доставки</div>
 								<div class="field">
 									<label for="name">Ф.И.О.</label>
-									<input type="text" id="name">
+									<input type="text" id="name" required>
 									<span class="star">*</span>
 								</div>
 								<div class="field">
 									<label for="phone">Телефон</label>
-									<input type="text" id="phone">
+									<input type="text" id="phone" required>
 									<span class="star">*</span>
 								</div>
 								<div class="field">
 									<label for="">Электронная почта</label>
-									<input type="text">
+									<input type="text" required>
 									<span class="star">*</span>
 								</div>
 								<div class="field">
 									<label for="">Адрес доставки</label>
-									<input type="text">
+									<input type="text" required>
 									<span class="star">*</span>
 								</div>
 								<div class="field">
 									<label for="">Комментарий</label>
 									<textarea name="" id=""></textarea>
-								</div>
-							</div>
-							<div class="order_item">
-								<a href="#" class="js-reg registered">Уже зарегистрированы?</a>
-								<div class="registered_block">
-									<div class="field">
-										<label for="">Логин</label>
-										<input type="text">
-										<span class="star">*</span>
-									</div>
-									<div class="field">
-										<label for="">Пароль</label>
-										<input type="text">
-										<span class="star">*</span>
-									</div>
-									<a href="#" class="btn_enter">Войти</a>
 								</div>
 							</div>
 							<div class="text_block_order">
@@ -280,7 +282,8 @@
 							</div>
 							<div class="btn_block">
 								<a href="#" class="edit">Вернуться к редактированию корзины</a>
-								<a href="#" class="btn">Перейти к оплате</a>
+<!--								<a href="#" class="btn">Перейти к оплате</a>-->
+								<button href="#" class="btn">Перейти к оплате</button>
 							</div>
 						</form>
 					</div>
