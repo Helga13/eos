@@ -971,6 +971,13 @@ input[type=checkbox]:checked+label .checkbox::after {
 		@include font-size(2.0);
 		@include line-height(3.0);
 		margin: 10px 0 16px;
+		.old__price{
+			@include font-size(1.2);
+			@include line-height(3.0);
+			opacity: 0.6;
+			text-decoration: line-through;
+			padding-right: 4px;
+		}
 	}
 }
 .sticker_novelty{
@@ -1983,6 +1990,13 @@ option,
 		@include font-size(3.0);
 		@include line-height(4.0);
 		padding: 0 30px;
+		.old__price{
+			@include font-size(1.4);
+			@include line-height(4.0);
+			opacity: .6;
+			text-decoration: line-through;
+			padding-right: 4px;
+		}
 	}
 }
 
