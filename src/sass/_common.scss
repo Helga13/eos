@@ -2290,6 +2290,21 @@ option,
 		font-family: 'CoreSansA65Bold', $font-stack-helvetica;
 		@include font-size(3.0);
 		@include line-height(4.0);
+		.old__price{
+			@include font-size(1.2);
+			@include line-height(3.0);
+			opacity: 0.6;
+			text-decoration: line-through;
+			padding-right: 4px;
+		}
+	}
+	.cover_block{
+		margin-top: 6px;
+		width: 120px;
+		padding: 0;
+		img{
+			width: 100%;
+		}
 	}
 	.btn_popup_block{
 		overflow: hidden;
